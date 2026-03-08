@@ -1,0 +1,15 @@
+package handsOn_6__3;
+
+public class Square extends Rectangle {
+
+	public Square() {
+		
+	}
+	
+	public Square(double size) {
+		this().setLength(size);
+	}
+	
+	
+
+}

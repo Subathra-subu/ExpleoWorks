@@ -6,7 +6,6 @@ public abstract class Shape {
 	protected boolean isFilled = true;
 	
 	public Shape() {
-		
 	}
 
 	public Shape(String color, boolean isFilled) {
@@ -36,7 +35,7 @@ public abstract class Shape {
 
 	@Override
 	public String toString() {
-		return "Shape [color=" + color + ", isFilled=" + isFilled + "]";
+		return "Shape [color=" + getColor() + ", isFilled()=" + isFilled + "]";
 	}
 	
 	

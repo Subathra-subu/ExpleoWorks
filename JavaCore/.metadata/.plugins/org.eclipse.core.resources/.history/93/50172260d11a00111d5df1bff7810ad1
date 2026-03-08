@@ -1,0 +1,29 @@
+package handsOn_6__3;
+
+import java.util.Scanner;
+
+public class ShapeMain {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+	
+		System.out.println("Enter the radius of the circle:");
+		double radius = scanner.nextDouble();
+		
+		
+		System.out.println("Enter the length of the rectangle:");
+		double radius = scanner.nextDouble();
+		
+		System.out.println("Enter the width of the rectangle:");
+		double radius = scanner.nextDouble();
+		
+		
+		
+		System.out.println("Enter the size of the square:");
+		double radius = scanner.nextDouble();
+		
+
+	}
+
+}

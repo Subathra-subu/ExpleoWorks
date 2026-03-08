@@ -1,0 +1,50 @@
+package handsOn_6__3;
+
+import java.util.Scanner;
+
+public class ShapeMain {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		Shape shape = null;
+	
+		System.out.println("Enter the radius of the circle:");
+		double radius = scanner.nextDouble();
+		
+		shape = new Circle(radius);
+		
+		System.out.println("\n"+shape.toString());
+		System.out.println("\nArea of Circle: "+shape.getArea());
+		System.out.println("\nPerimeter of Circle: "+shape.getPerimeter());
+		
+		
+		System.out.println("\nEnter the length of the rectangle:");
+		double length = scanner.nextDouble();
+		
+		System.out.println("Enter the width of the rectangle:");
+		double width = scanner.nextDouble();
+		
+		shape = new Rectangle(width,length);
+		
+		System.out.println("\n"+shape.toString());
+		System.out.println("\nArea of Rectangle: "+shape.getArea());
+		System.out.println("\nPerimeter of Rectangle: "+shape.getPerimeter());
+		
+		
+		System.out.println("\nEnter the size of the square:");
+		double size = scanner.nextDouble();
+		
+		shape = new Square(size);
+		
+		System.out.println("\n"+shape.toString());
+		System.out.println("\nArea of Square: "+shape.getArea());
+		System.out.println("\nPerimeter of Square: "+shape.getPerimeter());
+		
+		scanner.close();
+		
+
+	}
+
+}
