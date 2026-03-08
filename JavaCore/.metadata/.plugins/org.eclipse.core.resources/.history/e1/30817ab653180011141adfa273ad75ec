@@ -1,0 +1,36 @@
+package abstraction;
+
+abstract class Shape{
+	
+	void draw() {
+		System.out.println("Drawing..");
+	}
+	
+	public abstract void area();
+	
+	public abstract void perimeter();
+	
+}
+
+class Rectangle extends Shape{
+	
+	private int length;
+	private int breadth;
+	
+	public Rectangle(int length,int breadth) {
+		this.length = length;
+		this.breadth = breadth;
+	}
+	
+	public void area() {
+		System.out.println("Area:"+(length*breadth));
+	}
+	
+	public void primeter() {
+		System.out.println("Perimeter:"+2*(length+breadth));
+	}
+}
+
+public class ShapeDemo {
+
+}

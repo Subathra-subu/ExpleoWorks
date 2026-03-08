@@ -1,0 +1,19 @@
+package assignment2_2;
+
+public class PaymentMain {
+
+	public static void main(String[] args) {
+		
+		Payment p1 = new CreditCardPayment("1001", 5000, "Anu","1234567812345678", "123", "2010-10-23");
+
+        Payment p2 = new UPIPayment("1002", 2000, "Bala","bala@upi", "1234");
+
+        Payment p3 = new NetBankingPayment("1003", 8000, "Charu","SBI", "123456", "SBIN0001234");
+
+        p1.executeTransaction();
+        p2.executeTransaction();
+        p3.executeTransaction();
+
+	}
+
+}

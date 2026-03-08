@@ -1,0 +1,15 @@
+package movieBooking;
+
+public class MovieBooking {
+
+	public static void main(String[] args) {
+		
+		Movie m = new Movie("Comedy","AAA","Tamil");
+		
+		Catalog catalog = new Catalog();
+		
+		catalog.addMovie(m);
+
+	}
+
+}

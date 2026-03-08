@@ -1,0 +1,18 @@
+package handsOn_6__1;
+
+public class MovableCircle implements Movable{
+	
+	private int radius;
+	private MovablePoint center;
+	
+	public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
+		super();
+		this.x = x;
+		this.y = y;
+		this.xSpeed = xSpeed;
+		this.ySpeed = ySpeed;
+	}
+	
+	
+
+}

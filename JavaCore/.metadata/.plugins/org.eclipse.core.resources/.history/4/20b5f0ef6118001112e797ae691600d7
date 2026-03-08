@@ -1,0 +1,19 @@
+package movieBooking;
+
+import java.util.LocalDate;
+import java.util.List;
+
+public class Catalog implements SearchByGenre,SearchByTitle {
+	
+	public static Date lastUpadated;
+	
+	private static List<Movie> movieList = new ArrayList<Movie>();
+	
+	
+	
+	
+	
+	
+	
+
+}

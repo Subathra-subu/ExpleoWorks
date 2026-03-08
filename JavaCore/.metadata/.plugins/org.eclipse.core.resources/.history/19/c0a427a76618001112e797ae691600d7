@@ -1,0 +1,25 @@
+package movieBooking;
+
+import java.util.Scanner;
+
+public class MovieBooking extends Catalog{
+
+	public static void main(String[] args) { 
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		Catalog catalog = new Catalog();
+		
+		catalog.addMovie(new Movie("Comedy","AAA","Tamil"));
+		catalog.addMovie(new Movie("Horror","BBB","Tamil"));
+		catalog.addMovie(new Movie("Thriller","CCC","Tamil"));
+		catalog.addMovie(new Movie("Crime","AAA","Tamil"));
+		
+		System.out.println("Enter the Genre to Search:");
+		String genre = scanner.next();
+		
+		
+
+	}
+
+}

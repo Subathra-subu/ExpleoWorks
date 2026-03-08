@@ -1,0 +1,98 @@
+package assignment2_1;
+
+import java.util.Scanner;
+
+public class EmployeeMain {
+	
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static String toGetEmployeeId() {
+		System.out.println("Enter the Employee Id:");
+		String employeeId = scanner.next();
+		return employeeId;
+	}
+	
+	public static String toGetEmployeeName() {
+		System.out.println("Enter the Employee Name:");
+		String employeeName = scanner.next();
+		return employeeName;
+	}
+	
+	public static double toGetBaseSalary() {
+		System.out.println("Enter the Base salary:");
+		double baseSalary = scanner.nextDouble();
+		return baseSalary;
+	}
+
+	public static void main(String[] args) {
+		
+		Employee employee = null;
+		
+		int choice;
+		do {
+		
+		System.out.println("\nEmployee Types:\n 1. Permanent Employee"
+				+ "\n 2. Contract Employee"
+				+ "\n 3. Intern Employee"
+				+ "\n 4. Exit");
+		
+		System.out.println("Enter the choice:");
+		choice = scanner.nextInt();
+		
+		if(choice==4) {
+			System.out.println("Thank you!!!");
+			return;
+		}
+		
+		String employeeId = EmployeeMain.toGetEmployeeId();
+		String  employeeName = EmployeeMain.toGetEmployeeName();
+		double baseSalary = EmployeeMain.toGetBaseSalary();
+		
+		switch(choice) {
+		
+		case 1:
+				
+				System.out.println("Enter the bonus amount of Permanent Employee:");
+				double bonus = scanner.nextDouble();
+				
+				employee = new PermanentEmployee(employeeId,employeeName, baseSalary, bonus);
+				System.out.println("Salary of Permanent Employee: "+employee.calculateSalary());
+				
+				break;
+				
+				
+		case 2:
+			
+				System.out.println("Enter the Tax rate of Contract Employee:");
+				double taxRate = scanner.nextDouble();
+			
+				System.out.println("Enter the Service charge of Contract Employee:");
+				double serviceCharge = scanner.nextDouble();
+			
+				
+				employee = new ContractEmployee(employeeId, employeeName, baseSalary, taxRate, serviceCharge);
+				System.out.println("Salary of Contract Employee: "+employee.calculateSalary());
+				
+				break;
+				
+		case 3:
+
+				System.out.println("Enter the Stipend amount of Intern Employee:");
+				double stipend = scanner.nextDouble();
+				
+				employee = new Intern(employeeId, employeeName, stipend);
+				System.out.println("Salary of Intern Employee: "+employee.calculateSalary());
+				
+				break;
+				
+		 default:
+			 
+			 	System.out.println("Invalid option");
+			
+		}
+		}while(choice != 4);
+		
+
+	}
+
+}

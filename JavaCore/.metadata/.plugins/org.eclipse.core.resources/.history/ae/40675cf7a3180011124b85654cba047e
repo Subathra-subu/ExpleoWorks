@@ -1,0 +1,33 @@
+package assignment2_1;
+
+import java.util.Scanner;
+
+public class EmployeeMain {
+	
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static String toGetTransactionId() {
+		System.out.println("Enter the Employee Id:");
+		String employeeId = scanner.next();
+		return employeeId;
+	}
+	
+	public static double toGetAmount() {
+		System.out.println("Enter the Employee Name:");
+		String employeeName = scanner.next();
+		return employeeNamee;
+	}
+	
+	public static String toGetCustomerName() {
+		System.out.println("Enter the Customer Name:");
+		String customerName = scanner.next();
+		return customerName;
+	}
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

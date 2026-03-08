@@ -1,0 +1,26 @@
+package movieBooking;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Catalog implements SearchByGenre,SearchByTitle {
+	
+	public static Date lastUpadated;
+	
+	private static List<Movie> movieList = new ArrayList<>();
+	
+	public void searchGenre(String genre) {
+		for(Movie movie : movieList) {
+			if(movie.getGenre().equals(genre))
+				
+				
+		}
+	}
+	
+	
+	
+	
+	
+
+}

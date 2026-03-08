@@ -1,0 +1,19 @@
+package controlFlowStatements;
+
+public class IfElseIfControlStructure {
+
+	public static void main(String[] args) {
+		
+		int colorValue = 2;
+		if(colorValue==1) {
+			System.out.println("Color Blue!");
+		}
+		else if(colorValue==2) {
+			System.out.println("Color Red!");
+		}
+		else
+			System.out.println("Color Green!");
+
+	}
+
+}

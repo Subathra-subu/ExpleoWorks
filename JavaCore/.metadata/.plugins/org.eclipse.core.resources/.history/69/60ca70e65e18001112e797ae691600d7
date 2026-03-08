@@ -1,0 +1,81 @@
+package interfaceDemo;
+
+interface Shape{
+	
+	double defaultValue = 1.0;
+	
+	double calculateArea();
+	
+	double calculatePerimeter();
+	
+	default String getDescription() {
+		return "Undefined Shape";
+	}
+}
+
+class Circle implements Shape{
+	
+	private double radius;
+	
+	public Circle(double radius) {
+		this.radius = radius;
+	}
+	
+	public Circle() {
+		this.radius = defaultValue;
+	}
+	
+	public double calculateArea() {
+		return 3.14*radius*radius;
+	}
+	
+	public double calculatePerimeter() {
+		return (2*3.14*radius);
+	}
+	
+	public String getDescription() {
+		return "Circle Radius: "+radius;
+	}
+}
+
+class Rectangle implements Shape{
+	
+	private double length;
+	private double breadth;
+	
+	public Rectangle(int length,int breadth) {
+		this.length = length;
+		this.breadth = breadth;
+	}
+	
+	public Rectangle() {
+		this.length = defaultValue;
+		this.breadth = defaultValue;
+	}
+	
+	public double calculateArea() {
+		return (length*breadth);
+	}
+	
+	public double calculatePerimeter() {
+		return 2*(length+breadth);
+	}
+	
+	public String getDescription() {
+		return "Rectangle Length: "+length+" Breadth: "+breadth;
+	}
+}
+
+
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		
+		Circle circle = new Circle();
+			
+		circle.calculateArea();
+			
+	}
+
+}

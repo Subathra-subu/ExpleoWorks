@@ -1,0 +1,35 @@
+package innerClasses;
+
+class Person{
+	int age = 21;
+	static int weight = 45;
+	
+	static class Gender{
+		
+		void nonStaticMethod() {
+			System.out.println("Non Static Method");
+			System.out.println("Weight:"+weight);
+		}
+		
+		static void staticMethod(Person person) {
+			System.out.println("Static Method");
+			System.out.println("Age:"+person.age);
+		}
+	}
+	
+	Gender gender = new Gender();
+}
+
+public class StaticClassExample {
+
+	public static void main(String[] args) {
+		
+		Person person = new Person();
+		
+		person.gender.nonStaticMethod();
+		
+		Person.Gender.staticMethod(person); // Object of outer class was passed as argument to access non static variable 
+
+	}
+
+}

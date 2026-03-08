@@ -1,0 +1,35 @@
+package classExamples;
+
+class Base{
+	
+	int i;
+	
+	void display() {
+		System.out.println(i);
+	}
+	
+}
+
+class Derived extends Base{
+	
+	int j;
+	
+	void display() {
+		System.out.println(j);
+	}
+	
+}
+
+public class OverridingExample {
+
+	public static void main(String[] args) {
+		
+		Base derived = new Derived();
+		
+		derived.i=10;
+		
+		derived.display();
+
+	}
+
+}

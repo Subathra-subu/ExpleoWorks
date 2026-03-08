@@ -1,0 +1,48 @@
+package movieBooking;
+
+public class Movie {
+	
+	String genre;
+	String title;
+	String language; 
+	
+	public Movie(String genre, String title, String language) {
+		this.genre = genre;
+		this.title = title;
+		this.language = language;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getMovieDetails() {
+		return "Movie [genre=" + genre + ", title=" + title + ", language=" + language + "]";
+	}
+
+	
+
+	
+
+
+}

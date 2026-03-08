@@ -1,0 +1,41 @@
+package movieBooking;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+class Catalog implements SearchByGenre,SearchByTitle {
+	
+	public static Date lastUpadated;
+	
+	private static List<Movie> movieList = new ArrayList<>();
+	
+	public void searchByGenre(String genre) {
+		for(Movie movie : movieList) {
+			if(movie.getGenre().equalsIgnoreCase(genre)) {
+				System.out.println(movie.getMovieDetails());
+				return;
+			}
+		}
+			System.out.println("Not found");
+		
+	}
+	
+	public void searchByTitle(String title) {
+		
+		for(Movie movie : movieList) {
+			if(movie.getTitle().equalsIgnoreCase(title)) {
+				System.out.println(movie.getMovieDetails());
+				return;
+			}
+		}
+		System.out.println("Not found");
+	}
+	
+	public void addMovie(Movie m) {
+		movieList.add(m);
+	}
+
+}
+
+

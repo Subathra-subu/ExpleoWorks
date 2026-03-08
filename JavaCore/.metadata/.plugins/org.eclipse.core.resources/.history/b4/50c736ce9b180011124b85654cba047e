@@ -1,0 +1,79 @@
+package assignment2_2;
+
+import java.time.LocalDate;
+
+import java.util.Scanner;
+
+class PaymentMain{
+	
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static String toGetTransactionId() {
+		System.out.println("Enter the Transaction id:");
+		String transactionId = scanner.next();
+		return transactionId;
+	}
+	
+	public static double toGetAmount() {
+		System.out.println("Enter the amount:");
+		double amount = scanner.nextDouble();
+		return amount;
+	}
+	
+	public static String toGetCustomerName() {
+		System.out.println("Enter the amount:");
+		String customerName = scanner.next();
+		return customerName;
+	}
+
+	public static void main(String[] args) {
+		
+		Payment payment;
+		
+		do {
+		System.out.println("The payment options are :\n 1. Credit card payment"
+				+ "\n 2. Net banking payment"
+				+ "\n 3. UPI payment");
+		
+		System.out.println("Enter the choice:");
+		int choice = scanner.nextInt();
+		
+		String transactionId= PaymentMain.toGetTransactionId();
+		double amount = PaymentMain.toGetAmount();
+		String customerNameString = PaymentMain.toGetCustomerName();
+		
+		switch(choice) {
+		case 1:
+				
+				System.out.println("Enter the Cardnumber:");
+				String cardnumber = scanner.next();
+				
+				System.out.println("Enter the cvv:");
+				String ccv = scanner.next();
+				
+				String date = scanner.next();
+				LocalDate expiryDate = LocalDate.parse(date);
+				
+				
+				
+		case 2:
+			
+				System.out.println("Enter the Bank Name:");
+				String bankName = scanner.next();
+			
+				System.out.println("Enter the AccountNumber:");
+				String accountNumber = scanner.next();
+			
+				System.out.println("Enter the IFSC code:");
+				String ifscCode = scanner.next();
+		}
+		
+		
+		
+		
+		}while(choice);
+		
+
+	}
+
+}

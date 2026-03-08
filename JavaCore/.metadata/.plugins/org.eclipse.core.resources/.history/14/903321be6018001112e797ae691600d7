@@ -1,0 +1,5 @@
+package movieBooking;
+
+public interface SearchByGenre {
+
+}

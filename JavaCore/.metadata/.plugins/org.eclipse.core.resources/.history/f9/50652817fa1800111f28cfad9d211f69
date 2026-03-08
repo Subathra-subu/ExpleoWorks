@@ -1,0 +1,24 @@
+package inheritance;
+
+import inheritance.Staff;
+import inheritance.Student;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Student Details:");
+		
+		Student student = new Student("Anu","Salem","XYZ",2020,10000);
+		
+		System.out.println(student);
+		
+		System.out.println("Staff Details:");
+		
+		Staff staff = new Staff("Abi","Salem","ABC School",20000);
+		
+		System.out.println(staff);
+
+	}
+
+}

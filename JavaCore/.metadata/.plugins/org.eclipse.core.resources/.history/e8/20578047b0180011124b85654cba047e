@@ -1,0 +1,98 @@
+package assignment2_1;
+
+import java.time.LocalDate;
+import java.util.Scanner;
+
+public class EmployeeMain {
+	
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static String toGetEmployeeId() {
+		System.out.println("Enter the Employee Id:");
+		String employeeId = scanner.next();
+		return employeeId;
+	}
+	
+	public static String toGetEmployeeName() {
+		System.out.println("Enter the Employee Name:");
+		String employeeName = scanner.next();
+		return employeeName;
+	}
+	
+	public static double toGetBaseSalary() {
+		System.out.println("Enter the Base salary:");
+		double baseSalary = scanner.nextDouble();
+		return baseSalary;
+	}
+
+	public static void main(String[] args) {
+		
+		Employee employee = null;
+		
+		int choice;
+		do {
+			
+		String employeeId = EmployeeMain.toGetEmployeeId();
+		String  employeeName = EmployeeMain.toGetEmployeeName();
+		double baseSalary = EmployeeMain.toGetBaseSalary();
+		
+		System.out.println("\nEmployee Types:\n 1. Permanent Employee"
+				+ "\n 2. Contract Employee"
+				+ "\n 3. Intern Employee"
+				+ "\n 4. Exit");
+		
+		System.out.println("Enter the choice:");
+		choice = scanner.nextInt();
+		
+		switch(choice) {
+		
+		case 1:
+				
+				System.out.println("Enter the bonus amount of Permanent Employee:");
+				double bonus = scanner.nextDouble();
+				
+				employee = new PermanentEmployee(employeeId,employeeName, baseSalary, bonus);
+				
+				break;
+				
+				
+		case 2:
+			
+				System.out.println("Enter the Tax rate of Contract Employee:");
+				double taxRate = scanner.nextDouble();
+			
+				System.out.println("Enter the Service charge of Contract Employee:");
+				double serviceCharge = scanner.nextDouble();
+			
+				
+				employee = new ContractEmployee(employeeId, employeeName, baseSalary, taxRate, serviceCharge);
+				
+				break;
+				
+		case 3:
+
+				System.out.println("Enter the Stipend amount of Intern Employee:");
+				double stipend = scanner.nextDouble();
+				
+				employee = new Intern(employeeId, employeeName, stipend);
+				payment.executeTransaction();
+				
+				break;
+				
+		case 4:
+			
+		    	System.out.println("Exiting!!!");
+		    	System.exit(0);
+				
+		 default:
+			 
+			 	System.out.println("Invalid option");
+			 	break;
+			
+		}
+		}while(choice != 4);
+		
+
+	}
+
+}

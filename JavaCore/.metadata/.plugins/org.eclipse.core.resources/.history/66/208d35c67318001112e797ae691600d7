@@ -1,0 +1,90 @@
+package movieBooking;
+
+import java.text.DateFormat;
+
+public class Movie {
+	
+	private String title;
+	private String description;
+	private int rating;
+	private String language; 
+	private DateFormat releaseDate;
+	private String country;
+	private String genre;
+
+	public Movie(String title, String description, int rating, String language, DateFormat releaseDate,
+			String country, String genre) {
+		this.title = title;
+		this.description = description;
+		this.rating = rating;
+		this.language = language;
+		this.releaseDate = releaseDate;
+		this.country = country;
+		this.genre = genre;
+	}
+
+	public String getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
+
+	public DateFormat getReleaseDateString() {
+		return releaseDateString;
+	}
+
+	public void setReleaseDateString(DateFormat releaseDateString) {
+		this.releaseDateString = releaseDateString;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	@Override
+	public String toString() {
+		return "Movie [title=" + title + ", descriptionString=" + descriptionString + ", rating=" + rating
+				+ ", language=" + language + ", releaseDateString=" + releaseDateString + ", country=" + country
+				+ ", genre=" + genre + "]";
+	}
+}

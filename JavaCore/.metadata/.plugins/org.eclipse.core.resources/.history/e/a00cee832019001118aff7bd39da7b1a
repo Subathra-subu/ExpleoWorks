@@ -1,0 +1,39 @@
+package handsOn_6__2;
+
+import java.util.Scanner;
+
+public class MovableMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the x value:");
+		int x = sc.nextInt();
+		
+		System.out.println("Enter the y value:");
+		int y = sc.nextInt();
+		
+		System.out.println("Enter the x speed:");
+		int xSpeed = sc.nextInt();
+		
+		System.out.println("Enter the y speed:");
+		int ySpeed = sc.nextInt();
+		
+		MovablePoint movablePoint = new MovablePoint(x, y, xSpeed, ySpeed);
+		
+		movablePoint.moveDown();
+		movablePoint.moveLeft();
+		
+		System.out.println("Enter the radius:");
+		int radius = sc.nextInt();
+		
+		MovableCircle movableCircle = new MovableCircle(x, y, xSpeed, ySpeed, radius);
+		
+		movableCircle.moveDown();
+		movableCircle.moveLeft();
+		
+		sc.close();
+		}
+
+}

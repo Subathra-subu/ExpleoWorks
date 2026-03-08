@@ -1,0 +1,10 @@
+package handsOn_6__1;
+
+public class MovableCircle implements Movable{
+	
+	private int radius;
+	private Movable center;
+	
+	
+
+}

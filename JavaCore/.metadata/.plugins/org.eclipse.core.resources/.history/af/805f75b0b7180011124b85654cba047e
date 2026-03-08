@@ -1,0 +1,47 @@
+package handsOn_6__1;
+
+public class MovableCircle implements Movable{
+	
+	private int radius;
+	private MovablePoint center;
+	
+	public MovableCircle(int x, int y, int xSpeed, int ySpeed,int radius) {
+		this.center.x = x;
+		this.center.y = y;;
+		this.center.xSpeed = xSpeed;
+		this.center.ySpeed = ySpeed;
+		this.radius = radius;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "MovableCircle [radius=" + radius + ", toString()=" + super.toString() + "]";
+	}
+
+
+
+	public void moveUp() {
+		
+	}
+	
+	public void moveDown() {
+		
+	}
+	
+	public void moveLeft() {
+		
+	}
+	
+	public void moveRight() {
+		
+	}
+
+	
+	
+	
+	
+	
+	
+
+}
