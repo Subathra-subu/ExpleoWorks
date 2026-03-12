@@ -1,0 +1,49 @@
+package handsOn_7;
+
+import java.util.Scanner;
+
+public class PasswordEncryption {
+		
+	static void passwordEncryption(String password) {
+		
+		System.out.print("\nPassword after encryption:");
+		
+		int len = password.length();
+		
+		for(int i=0;i<len;i++) {
+			
+			char c = password.charAt(i);
+			
+			if(c >= 'A' && c <= 'Z') {
+				int n = (int)c+3;
+				c = (n<=90)?(char)n:(char)(n-26);
+			}
+			else if(c >= 'a' && c <= 'z') {
+				int n = (int)c+3;
+				c = (n<=122)?(char)n:(char)(n-26);
+			}
+			else if(c == ' ') {
+				c = '-';
+			}
+			
+			System.out.print(c);
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the Password:");
+		String password = sc.nextLine();
+		
+		System.out.print("Password before encryption:"+password);
+		
+		passwordEncryption(password);
+		
+		sc.close();
+
+	}
+}

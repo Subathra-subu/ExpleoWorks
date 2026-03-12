@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.imageio.plugins.tiff.ExifGPSTagSet"/>
     <fullyQualifiedTypeName name="assignment.Employee"/>
     <fullyQualifiedTypeName name="assignment.Attendance"/>
     <fullyQualifiedTypeName name="classExamples.Programmer"/>
@@ -15,7 +14,6 @@
     <fullyQualifiedTypeName name="inheritance.Staff"/>
     <fullyQualifiedTypeName name="assignment2.Employee"/>
     <fullyQualifiedTypeName name="abstraction.Shape"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.lang.ScopedValue"/>
     <fullyQualifiedTypeName name="abstraction.Rectangle"/>
     <fullyQualifiedTypeName name="abstraction.Circle"/>
@@ -41,7 +39,6 @@
     <fullyQualifiedTypeName name="assignment2_1.Intern"/>
     <fullyQualifiedTypeName name="handsOn_6__1.Movable"/>
     <fullyQualifiedTypeName name="java.awt.DefaultFocusTraversalPolicy"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="classExamples.Derived"/>
     <fullyQualifiedTypeName name="classExamples.SuperKeywordExample"/>
     <fullyQualifiedTypeName name="java.time.Year"/>
@@ -54,10 +51,13 @@
     <fullyQualifiedTypeName name="Inner"/>
     <fullyQualifiedTypeName name="innerClasses.Outer"/>
     <fullyQualifiedTypeName name="handsOn_6__2.MovableCircle"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="handsOn_6__3.Shape"/>
     <fullyQualifiedTypeName name="handsOn_6__3.Circle"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="handsOn_6__3.Rectangle"/>
     <fullyQualifiedTypeName name="handsOn_6__3.Square"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

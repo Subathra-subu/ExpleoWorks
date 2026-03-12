@@ -1,0 +1,36 @@
+package handsOn_7;
+
+import java.util.Scanner;
+
+public class RemoveDuplicates_1 {
+	
+	static void removeDuplicates(String str) {
+		
+		boolean[] isPresent = new boolean[255];
+		
+		for(int i = 0; i < str.length(); i++) {
+			if (isPresent[(int)str.charAt(i)]==false)
+				System.out.prinltn(str.charAt(i));
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter the String:");
+		
+		String str = sc.nextLine();
+		
+		System.out.println("Before Removing Duplicates:"+str);
+		
+		removeDuplicates(str);
+		
+		System.out.println("After Removing Duplicates:"+str);
+		
+		sc.close();
+
+	}
+
+}

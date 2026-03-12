@@ -1,0 +1,38 @@
+package handsOn_7;
+
+import java.util.Scanner;
+
+public class RemoveSpaces {
+	
+	static void removeSpaces(String str) {
+		
+		System.out.print("After Removing Duplicates:");
+		
+		int i=0;
+		
+		int len = str.length();
+		
+		while(i<len) {
+			if(str.charAt(i)!=' ' && (i!=0 || i!=len-1)){
+				System.out.print(str.charAt(i));
+			}
+			i++;
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter the String:");
+		
+		String str = sc.nextLine();
+		
+		System.out.println("Before Removing Spaces:"+str);
+		
+		removeSpaces(str);
+		
+		sc.close();
+		}
+
+}

@@ -1,0 +1,35 @@
+package handsOn_7;
+
+import java.util.Scanner;
+
+public class RemoveDuplicates_1 {
+	
+	static void removeDuplicates(String str) {
+		
+		char[] c = str.toCharArray();
+		
+		for(int i = 0; i < c.length; i++) {
+			for(int j = i+1 ;j < c.length; j++) {
+				if(c[i] == c[j]) System.out.print(c[j]);;
+			}
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String str = sc.nextLine();
+		
+		System.out.println("Before Removing Duplicates:"+str);
+		
+		removeDuplicates(str);
+		
+		System.out.println("After Removing Duplicates:"+str);
+		
+		sc.close();
+
+	}
+
+}
