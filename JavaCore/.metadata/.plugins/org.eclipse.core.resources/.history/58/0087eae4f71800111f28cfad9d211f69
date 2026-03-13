@@ -1,8 +1,0 @@
-package handsOn_6__2;
-
-public abstract class Shape {
-	
-	protected String color;
-	protected boolean isFilled;
-
-}
