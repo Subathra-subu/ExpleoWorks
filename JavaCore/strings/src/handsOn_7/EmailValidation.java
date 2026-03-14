@@ -6,7 +6,7 @@ public class EmailValidation {
 	
 	static String emailValidation(String mail) {
 		
-		if(mail.contains("[(a-zA-Z0-9_.-+)+@+(a-zA-Z.+)]")) return "correct";
+		if(mail.contains("^[A-Za-z](?:[A-Za-z0-9]|[._-](?=[A-Za-z0-9]))*@[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*(?:\\.[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)+$\"")) return "correct";
 		
 		return "Incorrect";
 	}
