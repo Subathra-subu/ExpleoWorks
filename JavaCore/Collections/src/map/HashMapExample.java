@@ -19,7 +19,7 @@ public class HashMapExample {
 		
 		System.out.println("Size of Map: "+map.size());
 		
-		System.out.println("Elements in the HashMap: "+map);
+		System.out.println("Elements in HashMap: "+map);
 		
 		Set<Map.Entry<String, Double>> set = map.entrySet();
 		
