@@ -1,9 +1,9 @@
 package handsOn_9;
 
-import java.security.PrivateKey;
 import java.util.ArrayList;
+import java.util.Collections;
 
-public class Person {
+public class Person implements Comparable<Person>{
 	
 	private String first_name;
 	private String last_name;
@@ -28,13 +28,24 @@ public class Person {
 	public void setLast_name(String last_name) {
 		this.last_name = last_name;
 	}
+	
+	public int compareTo(Person p) {
+		return this.first_name.compareTo(p.first_name);
+	}
 
 	public static void main(String[] args) {
 		
 		ArrayList<Person> arrayList = new ArrayList<Person>();
 		
+		arrayList.add(new Person("Priscilla","Wagner"));
+		arrayList.add(new Person("Tom","Parker"));
+		arrayList.add(new Person("Elvis","Presley"));
 		
-		 
+		Collections.sort(arrayList);
+		
+		for(Person p:arrayList) {
+			System.out.println(p.first_name+" "+p.last_name);
+		}
 
 	}
 
