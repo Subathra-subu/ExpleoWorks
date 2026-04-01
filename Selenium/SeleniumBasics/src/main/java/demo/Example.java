@@ -1,5 +1,6 @@
 package demo;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -25,8 +26,8 @@ public class Example {
 		
 		if(expected_url.equals(url))
 			System.out.print("Equal");
-		else System.out.print("Not_Equal");
 		
+		else System.out.print("Not_Equal");
 		
 		String Page_Source = driver.getPageSource();
 		
