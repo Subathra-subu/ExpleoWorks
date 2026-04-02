@@ -2,14 +2,15 @@ package demo;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
 
 public class Example {
 
 	public static void main(String[] args) {
 		
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new EdgeDriver();
 		
 		String expected_url = "https://www.flipkart.com/";
 		
