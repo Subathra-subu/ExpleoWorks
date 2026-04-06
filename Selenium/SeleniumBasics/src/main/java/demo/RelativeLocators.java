@@ -44,7 +44,6 @@ public class RelativeLocators {
 		
 		n_button.click();
 		
-		driver.close();
 
 	}
 
