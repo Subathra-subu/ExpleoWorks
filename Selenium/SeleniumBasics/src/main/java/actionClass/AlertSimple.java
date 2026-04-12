@@ -17,6 +17,4 @@ public class AlertSimple {
 	        Alert alert=driver.switchTo().alert();
 	        alert.accept();
 		}
-
-
 }
