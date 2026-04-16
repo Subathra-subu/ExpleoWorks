@@ -1,12 +1,10 @@
 package demoqa;
 
 
-import java.util.Iterator;
 import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -26,25 +24,14 @@ public class Window_Example {
 		Set<String> allwindowHandles = driver.getWindowHandles();
 		System.out.println("Count of Windows:"+allwindowHandles.size());
 		
-		WebElement window = driver.findElement(By.xpath("//a[@href='/alertsWindows']/descendant::h5"));
-		
-		window.click();
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		driver.navigate().to("https://demoqa.com/alertsWindows");
 		
 		Set<String> allnewwindowHandles = driver.getWindowHandles();
-		System.out.println("Count of Windows:"+allnewwindowHandles);
+		System.out.println("Count of Windows:"+allnewwindowHandles.size());
 		
 		String parentHandle = driver.getWindowHandle();
 		System.out.println(parentHandle);
-		
-		Iterator<String> itr = allnewwindowHandles.iterator();
-		
-		String mainWindow = itr.next();
-		String childWindow = itr.next();
-		System.out.println(mainWindow);
-		System.out.println(childWindow);
-		
-		driver.switchTo().window(mainWindow);
-		
 		
 		driver.quit();
 	}
