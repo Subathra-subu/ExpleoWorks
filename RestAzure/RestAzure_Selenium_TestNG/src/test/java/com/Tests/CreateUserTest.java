@@ -19,11 +19,13 @@ public class CreateUserTest {
 		
 		payload.put("title","My first post");
 		payload.put("body","Learning Rest Assured");
-		payload.put("userId",1);
+		payload.put("id",1);
 		
 		Response response = RestAssured.given().contentType(ContentType.JSON).body(payload).when().post("https://jsonplaceholder.typicode.com/posts");
 		
 		System.out.println("Status code:"+response.getStatusCode());
+		
+		System.out.println(response);
 		
 		response.prettyPrint();
 		

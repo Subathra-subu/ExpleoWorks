@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-15T21:58:29 IST" name="Default suite" finished-at="2026-06-15T21:58:45 IST" duration-ms="16237">
+  <suite started-at="2026-06-16T11:55:16 IST" name="Default suite" finished-at="2026-06-16T11:55:22 IST" duration-ms="6078">
     <groups>
     </groups>
-    <test started-at="2026-06-15T21:58:29 IST" name="Default test" finished-at="2026-06-15T21:58:45 IST" duration-ms="16237">
-      <class name="com.Tests.Post_Test">
-        <test-method signature="PostMethod()[pri:0, instance:com.Tests.Post_Test@73a1e9a9]" started-at="2026-06-15T21:58:29 IST" name="PostMethod" finished-at="2026-06-15T21:58:45 IST" duration-ms="16078" status="PASS">
+    <test started-at="2026-06-16T11:55:16 IST" name="Default test" finished-at="2026-06-16T11:55:22 IST" duration-ms="6078">
+      <class name="com.Tests.Practice2_Test">
+        <test-method signature="GetTest()[pri:0, instance:com.Tests.Practice2_Test@73a1e9a9]" started-at="2026-06-16T11:55:16 IST" name="GetTest" finished-at="2026-06-16T11:55:22 IST" duration-ms="5924" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PostMethod -->
-      </class> <!-- com.Tests.Post_Test -->
+        </test-method> <!-- GetTest -->
+      </class> <!-- com.Tests.Practice2_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
