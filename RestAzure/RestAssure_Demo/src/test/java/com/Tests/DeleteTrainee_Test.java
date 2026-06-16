@@ -10,7 +10,7 @@ public class DeleteTrainee_Test {
   @Test
   public void delete_Trainee() {
 	  
-	  Response response = RestAssured.given().when().delete("http://localhost:3000/trainees/EBkfoajlyeM");
+	  Response response = RestAssured.given().when().delete("http://localhost:3000/trainees/5");
 	  
 	  response.prettyPrint();
 	  

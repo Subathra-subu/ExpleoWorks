@@ -18,7 +18,7 @@ public class UpdateTrainee_Partial_Test {
 		
 		payload.put("email","abinaya@gmail.com");
 		
-		Response response = RestAssured.given().contentType(ContentType.JSON).body(payload).when().patch("http://localhost:3000/trainees/Hv7krwcY3FM");
+		Response response = RestAssured.given().contentType(ContentType.JSON).body(payload).when().patch("http://localhost:3000/trainees/4");
 		
 		System.out.println("Status code:"+response.getStatusCode());
 		

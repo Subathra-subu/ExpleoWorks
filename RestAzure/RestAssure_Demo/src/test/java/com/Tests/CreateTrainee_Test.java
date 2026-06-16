@@ -30,6 +30,6 @@ public class CreateTrainee_Test {
 		
 		Assert.assertEquals(response.getStatusCode(),201);
 		
-		Assert.assertEquals(response.jsonPath().getString("name"),"Sarvesh");
+		Assert.assertEquals(response.jsonPath().getString("name"),"abinaya");
   }
 }
