@@ -3,14 +3,15 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <classes>
-  <class name="ApiValidationTest"/>
-  <class name="CreateUserTest"/>
-  <class name="GetUserTest"/>
-  <class name="Practice1_Test"/>
-  <class name="Practice2_Test"/>
-  <class name="Practice3_Test"/>
-  <class name="Practice4_Test"/>
-  <class name="SeleniumTest"/>
+            <class name="com.Tests.ApiValidationTest"/>
+            <class name="com.Tests.CreateUserTest"/>
+            <class name="com.Tests.GetUserTest"/>
+            <class name="com.Tests.Patch_Test"/>
+            <class name="com.Tests.Practice1_Test"/>
+            <class name="com.Tests.Practice2_Test"/>
+            <class name="com.Tests.Practice3_Test"/>
+            <class name="com.Tests.Practice4_Test"/>
+            <class name="com.Tests.SeleniumTest"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
