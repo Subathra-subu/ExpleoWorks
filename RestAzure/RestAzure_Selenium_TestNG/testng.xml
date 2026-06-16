@@ -2,5 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <classes>
+  <class name="ApiValidationTest"/>
+  <class name="CreateUserTest"/>
+  <class name="GetUserTest"/>
+  <class name="Practice1_Test"/>
+  <class name="Practice2_Test"/>
+  <class name="Practice3_Test"/>
+  <class name="Practice4_Test"/>
+  <class name="SeleniumTest"/>
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
