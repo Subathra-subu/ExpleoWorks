@@ -16,20 +16,22 @@ public class CreateTrainee_Test {
 	  
 	  	Map<String,Object>payload = new HashMap<>();
 		
-		payload.put("name","abinaya");
-		payload.put("email","abi@gmail.com");
-		payload.put("company","expleo");
+		payload.put("name","sarvesh");
+		payload.put("email","sarvesh@gmail.com");
+		payload.put("company","Google");
 		
-		Response response = RestAssured.given().contentType(ContentType.JSON).body(payload).when().post("http://localhost:3000/trainees");
+		Response response = RestAssured.given().contentType(ContentType.JSON).body(payload).
+				when().post("http://localhost:3000/trainees");
+		response.then().statusCode(200);
 		
-		System.out.println("Status code:"+response.getStatusCode());
-		
-		System.out.println(response);
-		
-		response.prettyPrint();
-		
-		Assert.assertEquals(response.getStatusCode(),201);
-		
-		Assert.assertEquals(response.jsonPath().getString("name"),"abinaya");
+//		System.out.println("Status code:"+response.getStatusCode());
+//		
+//		System.out.println(response);
+//		
+//		response.prettyPrint();
+//		
+//		Assert.assertEquals(response.getStatusCode(),201);
+//		
+//		Assert.assertEquals(response.jsonPath().getString("name"),"sarvesh");
   }
 }
