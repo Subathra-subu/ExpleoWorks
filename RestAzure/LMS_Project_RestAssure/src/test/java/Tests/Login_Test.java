@@ -34,8 +34,13 @@ public class Login_Test {
 	  
 	  response.then().statusCode(201);
 	  
-	  System.out.println(response.jsonPath().getString("token"));
+	  response.prettyPrint();
 	  
+	  String token = response.jsonPath().getString("token");
+	  
+	  System.out.println(token);
+	  
+	  config.setBearerToken(token); 
   }
 }
 	

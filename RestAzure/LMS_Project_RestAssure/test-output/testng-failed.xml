@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.GetAll_Test">
         <methods>
-          <include name="Get_all_roles"/>
+          <include name="Get_all_course_structures"/>
         </methods>
       </class> <!-- Tests.GetAll_Test -->
     </classes>

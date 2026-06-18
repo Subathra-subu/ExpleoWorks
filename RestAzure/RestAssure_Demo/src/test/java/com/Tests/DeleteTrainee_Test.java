@@ -14,6 +14,6 @@ public class DeleteTrainee_Test {
 	  
 	  response.prettyPrint();
 	  
-	  Assert.assertEquals(response.getStatusCode(), 200);
+	 response.then().statusCode(200);
   }
 }

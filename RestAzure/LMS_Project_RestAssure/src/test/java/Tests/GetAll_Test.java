@@ -11,7 +11,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class GetAll_Test {
+public class GetAll_Test extends Login_Test {
 	
 	ConfigReader config;
 	String url;
@@ -22,9 +22,14 @@ public class GetAll_Test {
 		config = new ConfigReader("configure.properties");
 		  
 		url = config.getData("baseUrl");
-		  
-		token = config.getData("bearer_token");
 		
+		token = config.getData("token");
+		
+//		Login_Test login_test = new Login_Test();
+//		
+//		login_test.Login_valid();
+//		
+//		token = config.getBearerToken();	
 	}
 
   @Test
@@ -80,7 +85,7 @@ public class GetAll_Test {
   public void Get_all_roles() {
 	  
 	  Response response = RestAssured.given().
-			  header("Authorization","ContentType"+token).
+			  header("Authorization","Bearer "+token).
 			  when().get(url+"/roles/getAll");
 	  
 	  response.then().statusCode(200);
@@ -88,6 +93,22 @@ public class GetAll_Test {
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Role Retrieved successfully");
 	  
 	  response.prettyPrint();
+	  
+  }
+  
+  @Test
+  public void  Get_all_course_structures() {
+	  
+	  Response response = RestAssured.given().
+			  header("Authorization","Bearer "+token).
+			  when().get(url+"/courses-structure/getAll");
+	  
+	  response.then().statusCode(200);
+	  
+	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
+	  
+	  response.prettyPrint();
+	  
 	  
   }
 }

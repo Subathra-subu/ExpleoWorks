@@ -27,7 +27,7 @@ public class LoginTest {
 		
 		response.prettyPrint();
 		
-		Assert.assertEquals(response.getStatusCode(),200);
+		response.then().statusCode(200);
 	  
 	  
   }

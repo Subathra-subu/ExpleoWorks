@@ -16,7 +16,7 @@ public class GetTrainee_Test {
 		
 		response.prettyPrint();
 		
-		Assert.assertEquals(response.getStatusCode(),200);
+		response.then().statusCode(200);
 		
 		String name = response.jsonPath().getString("name");
 		

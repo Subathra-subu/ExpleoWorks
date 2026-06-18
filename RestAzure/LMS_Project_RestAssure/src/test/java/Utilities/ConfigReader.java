@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
+	
+	public  static String bearerToken;
 
 	Properties properties;
 
@@ -25,4 +27,12 @@ public class ConfigReader {
 		}
 		return value.trim();
 	}
+	
+	 public void setBearerToken(String token) {
+	        bearerToken = token;
+	    }
+
+	 public String getBearerToken() {
+	        return bearerToken;
+	    }
 }
