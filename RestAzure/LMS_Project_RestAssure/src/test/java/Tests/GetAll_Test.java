@@ -107,8 +107,7 @@ public class GetAll_Test extends Login_Test {
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
 	  
-	  response.prettyPrint();
-	  
+	  response.prettyPrint(); 
 	  
   }
 }
