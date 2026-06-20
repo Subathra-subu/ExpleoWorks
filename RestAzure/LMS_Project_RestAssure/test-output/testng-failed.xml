@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.GetAll_Test">
+      <class name="Tests.CreateNodes_Test">
         <methods>
-          <include name="Get_all_course_structures"/>
+          <include name="Get_Note_ID"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- Tests.GetAll_Test -->
+      </class> <!-- Tests.CreateNodes_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

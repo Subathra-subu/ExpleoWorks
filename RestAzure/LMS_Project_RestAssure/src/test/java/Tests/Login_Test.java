@@ -34,11 +34,11 @@ public class Login_Test {
 	  
 	  response.then().statusCode(201);
 	  
-	  response.prettyPrint();
+//	  response.prettyPrint();
 	  
 	  String token = response.jsonPath().getString("token");
 	  
-	  System.out.println(token);
+	  System.out.println("Login:"+token);
 	  
 	  config.setBearerToken(token); 
   }

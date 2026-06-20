@@ -12,7 +12,7 @@ public class Options_Test {
 	  
 	  Response response = RestAssured.given().when().options("http://localhost:3000/trainees");
 	  
-	  Assert.assertEquals(response.getStatusCode(), 204);
+	  response.then().statusCode(204);
 	  
   }
 }

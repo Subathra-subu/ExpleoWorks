@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.json.JSONObject;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Utilities.ConfigReader;
@@ -11,7 +12,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class GetAll_Test extends Login_Test {
+public class GetAll_Test{
 	
 	ConfigReader config;
 	String url;
@@ -23,25 +24,28 @@ public class GetAll_Test extends Login_Test {
 		  
 		url = config.getData("baseUrl");
 		
-		token = config.getData("token");
-		
-//		Login_Test login_test = new Login_Test();
-//		
-//		login_test.Login_valid();
-//		
-//		token = config.getBearerToken();	
+	}
+	
+	@BeforeClass
+	public void setup() throws IOException {
+
+	    Login_Test login = new Login_Test();
+	    login.Login_valid();
+
+	    token = config.getBearerToken();
 	}
 
   @Test
   public void Health_check(){
 	  
 	  Response response = RestAssured.given().
-			  header("Authorization","ContentType"+token).
+			  header("Authorization","Bearer "+token).
 			  when().get(url);
 	  
 	  response.then().statusCode(200);
 	  
-	  response.prettyPrint();
+	 // response.prettyPrint();
+	  System.out.println(token);
   }
   
   @Test
@@ -62,7 +66,8 @@ public class GetAll_Test extends Login_Test {
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Password is incorrect");	  
 	  
-	  response.prettyPrint();
+	 // response.prettyPrint();
+	  System.out.println(token);
   }
   
   
@@ -70,14 +75,15 @@ public class GetAll_Test extends Login_Test {
   public void  Get_all_institutions() {
 	  
 	  Response response = RestAssured.given().
-			  header("Authorization","ContentType"+token).
+			  header("Authorization","Bearer "+token).
 			  when().get(url+"/getAll/institution");
 	  
 	  response.then().statusCode(200);
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Institution Retrieved successfully");
 	  
-	  response.prettyPrint();
+	 // response.prettyPrint();
+	  System.out.println(token);
 	  
   }
   
@@ -92,7 +98,8 @@ public class GetAll_Test extends Login_Test {
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Role Retrieved successfully");
 	  
-	  response.prettyPrint();
+	  //response.prettyPrint();
+	  System.out.println(token);
 	  
   }
   
@@ -107,7 +114,8 @@ public class GetAll_Test extends Login_Test {
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
 	  
-	  response.prettyPrint(); 
+	  //response.prettyPrint(); 
+	  System.out.println(token);
 	  
   }
 }
