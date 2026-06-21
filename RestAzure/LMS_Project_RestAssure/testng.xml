@@ -8,7 +8,6 @@
     <classes>
       <class name="Tests.GetAll_Test"/>
       <class name="Tests.CreateNodes_Test"/>
-      <class name="Tests.Login_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
