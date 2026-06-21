@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.CreateNodes_Test">
         <methods>
-          <include name="updateNote"/>
+          <include name="Get_Note_ID"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.CreateNodes_Test -->

@@ -82,7 +82,7 @@ public class CreateNodes_Test {
 
 	}
 
-	@Test
+	@Test(dependsOnMethods = "createNote")
 	public void Get_Note_ID() {
 
 		Response response = RestAssured.given()
