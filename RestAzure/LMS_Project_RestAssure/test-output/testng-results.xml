@@ -1,20 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="6" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-20T22:21:53 IST" name="Default suite" finished-at="2026-06-20T22:22:05 IST" duration-ms="12903">
+  <suite started-at="2026-06-21T17:47:22 IST" name="Default suite" finished-at="2026-06-21T17:47:44 IST" duration-ms="22115">
     <groups>
     </groups>
-    <test started-at="2026-06-20T22:21:53 IST" name="Default test" finished-at="2026-06-20T22:22:05 IST" duration-ms="12903">
+    <test started-at="2026-06-21T17:47:22 IST" name="Default test" finished-at="2026-06-21T17:47:44 IST" duration-ms="22115">
       <class name="Tests.CreateNodes_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CreateNodes_Test@7ba8c737]" started-at="2026-06-20T22:21:53 IST" name="setup" finished-at="2026-06-20T22:22:03 IST" duration-ms="10747" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CreateNodes_Test@31edaa7d]" started-at="2026-06-21T17:47:22 IST" name="setup" finished-at="2026-06-21T17:47:33 IST" duration-ms="10850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Get_Note_ID()[pri:0, instance:Tests.CreateNodes_Test@7ba8c737]" started-at="2026-06-20T22:22:03 IST" name="Get_Note_ID" finished-at="2026-06-20T22:22:05 IST" duration-ms="1916" status="PASS">
+        <test-method signature="createNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateNodes_Test@31edaa7d]" started-at="2026-06-21T17:47:35 IST" name="createNote" data-provider="createData" finished-at="2026-06-21T17:47:37 IST" duration-ms="2090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Created by Subathra]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#ffffff]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Get_Note_ID -->
+        </test-method> <!-- createNote -->
+        <test-method signature="updateNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateNodes_Test@31edaa7d]" started-at="2026-06-21T17:47:37 IST" name="updateNote" data-provider="updateData" finished-at="2026-06-21T17:47:39 IST" depends-on-methods="Tests.CreateNodes_Test.createNote" duration-ms="2201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API Test Note (edited)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Updated content]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#ffeb3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNote -->
+        <test-method signature="togglePinNote()[pri:0, instance:Tests.CreateNodes_Test@31edaa7d]" started-at="2026-06-21T17:47:39 IST" name="togglePinNote" finished-at="2026-06-21T17:47:42 IST" depends-on-methods="Tests.CreateNodes_Test.updateNote" duration-ms="2341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- togglePinNote -->
+        <test-method signature="deleteNote()[pri:0, instance:Tests.CreateNodes_Test@31edaa7d]" started-at="2026-06-21T17:47:42 IST" name="deleteNote" finished-at="2026-06-21T17:47:44 IST" depends-on-methods="Tests.CreateNodes_Test.togglePinNote" duration-ms="1796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNote -->
       </class> <!-- Tests.CreateNodes_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

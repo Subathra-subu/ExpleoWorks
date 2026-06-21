@@ -44,8 +44,7 @@ public class GetAll_Test{
 	  
 	  response.then().statusCode(200);
 	  
-	 // response.prettyPrint();
-	  System.out.println(token);
+	  response.prettyPrint();
   }
   
   @Test
@@ -66,8 +65,7 @@ public class GetAll_Test{
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Password is incorrect");	  
 	  
-	 // response.prettyPrint();
-	  System.out.println(token);
+	  response.prettyPrint();
   }
   
   
@@ -82,8 +80,7 @@ public class GetAll_Test{
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Institution Retrieved successfully");
 	  
-	 // response.prettyPrint();
-	  System.out.println(token);
+	  response.prettyPrint();
 	  
   }
   
@@ -98,8 +95,7 @@ public class GetAll_Test{
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Role Retrieved successfully");
 	  
-	  //response.prettyPrint();
-	  System.out.println(token);
+	  response.prettyPrint();
 	  
   }
   
@@ -114,8 +110,7 @@ public class GetAll_Test{
 	  
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
 	  
-	  //response.prettyPrint(); 
-	  System.out.println(token);
+	  response.prettyPrint(); 
 	  
   }
 }

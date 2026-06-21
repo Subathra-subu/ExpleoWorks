@@ -18,6 +18,12 @@ public class ExcelReader {
 		return getExcelData("src/test/resources/ExcelData.xlsx", "create_data");
 	}
 
+	@DataProvider(name = "updateData")
+	public Object[][] updateData() throws IOException {
+
+		return getExcelData("src/test/resources/ExcelData.xlsx", "update_data");
+	}
+
 	private Object[][] getExcelData(String file, String sheet) {
 
 		String[][] data = null;
