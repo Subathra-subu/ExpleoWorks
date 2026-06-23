@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-const lines = fs.readFileSync("Input.txt", "utf8").split(/\r?\n/);
+const lines = fs.readFileSync("input_sequence.txt", "utf8").split(/\r?\n/);
 
 let name: string = lines[0] || "";
 
