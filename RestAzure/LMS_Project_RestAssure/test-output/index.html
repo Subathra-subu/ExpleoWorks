@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--217350425\testng-customsuite.xml</span>
+                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-739666917\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.CreateNodes_Test" class="method navigator-link" hash-for-method="Get_all_Notes">Get_all_Notes</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.CreateNodes_Test" class="method navigator-link" hash-for-method="Get_all_Notes_Query_remaining">Get_all_Notes_Query_remaining</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -126,9 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Get_all_Notes">
-                  </a> <!-- Get_all_Notes -->
-                  <span class="method-name">Get_all_Notes</span>
+                  <a name="Get_all_Notes_Query_remaining">
+                  </a> <!-- Get_all_Notes_Query_remaining -->
+                  <span class="method-name">Get_all_Notes_Query_remaining</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--217350425\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse-739666917\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;Tests.CreateNodes_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Get_all_Notes&quot;/&gt;
+          &lt;include name=&quot;Get_all_Notes_Query_remaining&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Tests.CreateNodes_Test --&gt;
     &lt;/classes&gt;
@@ -191,14 +191,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Get_all_Notes')
+data.setCell(0, 1, 'Get_all_Notes_Query_remaining')
 data.setCell(0, 2, 'Tests.CreateNodes_Test')
-data.setCell(0, 3, 2547);
+data.setCell(0, 3, 5120);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,21 +213,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Tests.CreateNodes_Test</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">Get_Note_ID</span>
+                <br/>
+                <span class="ignored-method-name">Get_all_Notes_Query</span>
+                <br/>
+                <span class="ignored-method-name">Get_all_Notes</span>
+                <br/>
                 <span class="ignored-method-name">togglePinNote</span>
-                <br/>
-                <span class="ignored-method-name">updateNote</span>
-                <br/>
-                <span class="ignored-method-name">createNote</span>
                 <br/>
                 <span class="ignored-method-name">deleteNote</span>
                 <br/>
-                <span class="ignored-method-name">Get_Note_ID</span>
+                <span class="ignored-method-name">createNote</span>
+                <br/>
+                <span class="ignored-method-name">updateNote</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -245,8 +249,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Get_all_Notes</span>
-                <span class="method-start">7641 ms</span>
+                <span class="method-name">Get_all_Notes_Query_remaining</span>
+                <span class="method-start">14505 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

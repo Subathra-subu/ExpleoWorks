@@ -1,0 +1,8 @@
+import PromptSync from "prompt-sync";
+const prompt = PromptSync();
+
+let num : number = Number(prompt("Enter the number:"));
+
+if(num%7==0){
+    console.log(`${num} is divisor of 7`)
+}

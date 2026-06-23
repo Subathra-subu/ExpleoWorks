@@ -1,0 +1,6 @@
+let arr = [10, 20, 30, 40, 50];
+for (var val of arr) {
+    console.log(`Value: ${val}`);
+}
+export {};
+//# sourceMappingURL=For_Of.js.map

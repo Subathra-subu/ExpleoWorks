@@ -63,9 +63,22 @@ public class CreateNodes_Test {
 		response.prettyPrint();
 		response.then().statusCode(201);
 	}
-
+	
 	@Test
 	public void Get_all_Notes() {
+
+		Response response = RestAssured.given()
+				.header("Authorization", "Bearer " + token).queryParam("page", 1)
+				.when()
+				.get(url + "/getAll/notes");
+
+		response.then().statusCode(200);
+		response.prettyPrint();
+
+	}
+
+	@Test
+	public void Get_all_Notes_Query() {
 
 		Response response = RestAssured.given()
 				.header("Authorization", "Bearer " + token).queryParam("page", 1)
@@ -75,6 +88,24 @@ public class CreateNodes_Test {
 				.queryParam("isPinned", false)
 				.queryParam("sortBy", "lastEdited")
 				.queryParam("sortOrder", "desc").when()
+				.get(url + "/getAll/notes");
+
+		response.then().statusCode(200);
+		response.prettyPrint();
+
+	}
+	
+	@Test
+	public void Get_all_Notes_Query_remaining() {
+
+		Response response = RestAssured.given()
+				.header("Authorization", "Bearer " + token).queryParam("page", 1)
+				.queryParam("limit", 50)
+				.queryParam("search", "API")
+				.queryParam("tags", "Demo")
+				.queryParam("isPinned", true)
+				.queryParam("sortBy", "title")
+				.queryParam("sortOrder", "asc").when()
 				.get(url + "/getAll/notes");
 
 		response.then().statusCode(200);

@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.CreateNodes_Test">
+      <class name="Tests.WithoutToken">
         <methods>
-          <include name="Get_Note_ID"/>
-          <include name="setup"/>
+          <include name="withoutToken"/>
         </methods>
-      </class> <!-- Tests.CreateNodes_Test -->
+      </class> <!-- Tests.WithoutToken -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
