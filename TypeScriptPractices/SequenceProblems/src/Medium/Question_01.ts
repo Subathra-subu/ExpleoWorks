@@ -1,10 +1,10 @@
-import promptSync from "prompt-sync";
+import * as fs from "fs";
 
-const prompt = promptSync();
+const lines = fs.readFileSync("Input.txt", "utf8").split(/\r?\n/);
 
-let weight: number = Number(prompt("Weight: "));
-let height: number = Number(prompt("Height: "));
+let weight: number = Number(lines[0]);
+let height: number = Number(lines[1]);
 
 let bmi: number = weight / (height * height);
 
-console.log("BMI: "+bmi.toFixed(2));
+console.log("BMI: " + bmi.toFixed(2));

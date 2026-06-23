@@ -1,7 +1,7 @@
-import promptSync from "prompt-sync";
+import * as fs from "fs";
 
-const prompt = promptSync();
+const lines = fs.readFileSync("Input.txt", "utf8").split(/\r?\n/);
 
-let name: string = prompt("Enter your name: ");
+let name: string = lines[0] || "";
 
-console.log("Hello, "+name+"!");
+console.log("Hello, " + name + "!");

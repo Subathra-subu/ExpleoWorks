@@ -1,8 +1,8 @@
-import promptSync from "prompt-sync";
+import * as fs from "fs";
 
-const prompt = promptSync();
+const lines = fs.readFileSync("Input.txt", "utf8").split(/\r?\n/);
 
-let str: string = prompt("Enter a string: ");
+let str: string = lines[0] || " ";
 
 console.log(str.length);
 console.log(str + str);

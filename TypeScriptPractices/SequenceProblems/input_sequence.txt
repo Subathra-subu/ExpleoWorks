@@ -1,0 +1,11 @@
+5
+10
+20
+Suba
+2004
+65
+1.75
+1500
+4.6
+Laptop,Mouse,Keyboard,Monitor
+Hello

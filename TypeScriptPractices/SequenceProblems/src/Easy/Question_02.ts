@@ -1,9 +1,8 @@
-import promptSync from "prompt-sync"
+import * as fs from "fs";
 
-const prompt = promptSync();
+const lines = fs.readFileSync("input_sequence.txt", "utf8").split(/\r?\n/);
 
-let radius: number = Number(prompt("Enter the radius: "));
-
+let radius: number = Number(lines[0]);
 let area: number = Math.PI * radius * radius;
 
-console.log("Area of Circle =", area);
+console.log("Area of Circle = " + area);

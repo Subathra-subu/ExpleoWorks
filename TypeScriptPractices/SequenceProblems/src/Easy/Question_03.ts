@@ -1,10 +1,8 @@
-import promptSync from "prompt-sync"
+import * as fs from "fs";
 
-const prompt = promptSync();
+const lines = fs.readFileSync("input_sequence.txt", "utf8").split(/\r?\n/);
 
-let number1: number = Number(prompt("Enter the number1: "));
+let number1: number = Number(lines[0]);
+let number2: number = Number(lines[1]);
 
-let number2: number = Number(prompt("Enter the number2: "));
-
-console.log(`Sum of ${number1} and ${number2}: ${number1+number2}`);
-
+console.log(`Sum of ${number1} and ${number2}: ${number1 + number2}`);
