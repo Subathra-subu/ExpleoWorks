@@ -1,0 +1,122 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: loginTest.test.ts >> Login Tests >> valid login
+- Location: tests\loginTest.test.ts:5:9
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Welcome admin"
+Received: ""
+```
+
+```
+Error: locator.fill: Test ended.
+Call log:
+  - waiting for locator('#loginusername')
+    - waiting for" https://www.demoblaze.com/" navigation to finish...
+    - navigated to "https://www.demoblaze.com/"
+    - locator resolved to <input type="text" id="loginusername" class="form-control"/>
+    - fill("admin")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "PRODUCT STORE" [ref=e3]:
+      - /url: index.html
+      - img [ref=e4]
+      - text: PRODUCT STORE
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Home (current)" [ref=e8]:
+          - /url: index.html
+          - text: Home
+          - generic [ref=e9]: (current)
+      - listitem [ref=e10]:
+        - link "Contact" [ref=e11]:
+          - /url: "#"
+      - listitem [ref=e12]:
+        - link "About us" [ref=e13]:
+          - /url: "#"
+      - listitem [ref=e14]:
+        - link "Cart" [ref=e15]:
+          - /url: cart.html
+      - listitem [ref=e16]:
+        - link "Log in" [ref=e17]:
+          - /url: "#"
+      - listitem
+      - listitem
+      - listitem [ref=e18]:
+        - link "Sign up" [ref=e19]:
+          - /url: "#"
+    - generic:
+      - generic:
+        - list [ref=e20]:
+          - listitem [ref=e21] [cursor=pointer]
+          - listitem [ref=e22] [cursor=pointer]
+          - listitem [ref=e23] [cursor=pointer]
+        - generic:
+          - generic:
+            - img "First slide"
+        - button "Previous":
+          - generic [ref=e25] [cursor=pointer]: Previous
+        - button "Next":
+          - generic [ref=e27] [cursor=pointer]: Next
+  - generic [ref=e29]:
+    - generic [ref=e31]:
+      - link "CATEGORIES" [ref=e32]:
+        - /url: ""
+      - link "Phones" [ref=e33]:
+        - /url: "#"
+      - link "Laptops" [ref=e34]:
+        - /url: "#"
+      - link "Monitors" [ref=e35]:
+        - /url: "#"
+    - list [ref=e38]:
+      - listitem [ref=e39]:
+        - button "Previous" [ref=e40]
+      - listitem [ref=e41]:
+        - button "Next" [ref=e42] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import { Page,Locator } from "@playwright/test";
+  2  | 
+  3  | export class loginPage{
+  4  | 
+  5  |     readonly page:Page;
+  6  |     readonly userName:Locator;
+  7  |     readonly password:Locator;
+  8  |     readonly loginButton:Locator;
+  9  | 
+  10 |     constructor(page:Page){
+  11 |         this.page=page;
+  12 |         this.userName = page.locator("#loginusername");
+  13 |         this.password = page.locator("#loginpassword");
+  14 |         this.loginButton = page.getByRole("button",{name:'Log in'});
+  15 |     }
+  16 | 
+  17 |     async login(user_Name:string,pass_word:string){
+> 18 |         await this.userName.fill(user_Name);
+     |                             ^ Error: locator.fill: Test ended.
+  19 |         await this.password.fill(pass_word);
+  20 |         await this.loginButton.click();
+  21 |     }
+  22 | }
+```

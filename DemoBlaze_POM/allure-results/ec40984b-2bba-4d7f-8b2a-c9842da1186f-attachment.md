@@ -1,0 +1,60 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: loginTest.test.ts >> Login Tests >> valid login
+- Location: tests\loginTest.test.ts:5:9
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "Welcome admin"
+Received: ""
+```
+
+```
+Error: page.goto: Test ended.
+Call log:
+  - navigating to "https://www.demoblaze.com/", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import {Page,Locator} from '@playwright/test'
+  2  | 
+  3  | export class homePage{
+  4  | 
+  5  |     readonly page:Page
+  6  |     readonly loginLink:Locator
+  7  |     readonly successMessage:Locator
+  8  | 
+  9  |     constructor(page:Page){
+  10 |         this.page=page;
+  11 |         this.loginLink = page.getByRole("link",{name:"Log in"});
+  12 |         this.successMessage=page.locator("#nameofuser");
+  13 |     }
+  14 | 
+  15 |     async navigate(){
+> 16 |         await this.page.goto(process.env.base_url!),{
+     |                         ^ Error: page.goto: Test ended.
+  17 |             waitUntil:"domcontentloaded"
+  18 |         };
+  19 |     }
+  20 | 
+  21 |     async clickLogin(){
+  22 |         await this.loginLink.click();
+  23 |     }
+  24 | 
+  25 |     async verifyValidLogin(){
+  26 |         return await this.successMessage.textContent();
+  27 |     }
+  28 | }
+```
