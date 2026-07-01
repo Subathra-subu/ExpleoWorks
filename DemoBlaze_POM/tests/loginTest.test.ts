@@ -15,7 +15,7 @@ const user:loginuser[] = readLoginData();
         await expect(homePage.successMessage).toHaveText(`Welcome ${loginData.validlogin.username}`); 
     });
 
-    test.only('invalid login',async({page,homePage,loginPage})=>{
+    test('invalid login',async({page,homePage,loginPage})=>{
         
         await homePage.clickLogin();
 
