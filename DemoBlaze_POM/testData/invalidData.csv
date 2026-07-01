@@ -1,2 +1,3 @@
 username,password,errormessage
-admin,ad,Wrong password
+admin,ad,Wrong password.
+vfdug,admin,User does not exist.
