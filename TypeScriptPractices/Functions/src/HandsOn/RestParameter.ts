@@ -1,7 +1,7 @@
 function sum(a:number,...b:number[]):number{
     let result:number = a
     for(let i=0;i<b.length;i++){
-        result+=b[i];
+        result+=b[i]!;
     }
     return result;
 }
