@@ -24,7 +24,7 @@ module.exports={
         dryRun:false,
 
         format:[
-            "progress-bar",
+            "progress",
             "json:reports/cucumber-report.json",
             "html:reports/Cucumber-report.html"
         ]
