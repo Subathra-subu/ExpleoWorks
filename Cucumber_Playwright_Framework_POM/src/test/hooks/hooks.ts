@@ -1,15 +1,16 @@
-import { Before,After,BeforeAll,AfterAll } from "@cucumber/cucumber";
+import { Before,After,BeforeAll,AfterAll,setDefaultTimeout } from "@cucumber/cucumber";
 import {chromium} from "playwright"
 import { CustomWorld } from "../world/world";
 import {logger} from "../utils/Logger";
 import {LoginPage} from "../pages/LoginPage"
 import { RegisterPage } from "../pages/RegisterPage";
 
+setDefaultTimeout(60 * 1000);
 
 let browser:any;
 
 BeforeAll(async()=>{
-    //logger.info("Launching browser");
+    logger.info("Launching browser");
     browser=await chromium.launch();
 });
 
@@ -44,7 +45,7 @@ After(async function(this:CustomWorld,scenario) {
 
 AfterAll(async()=>{
 
-    // logger.info("Closing browser")
+    logger.info("Closing browser")
     await browser.close();
 
 })
