@@ -27,7 +27,7 @@ module.exports={
             "progress",
             "json:reports/Json_Report/Json-report.json",
             "html:reports/Html_Report/Html-report.html",
-            "rerun:@rerun.txt"
+            "rerun:reports/Rerun/rerun.txt"
         ],
         parallel:1
 
@@ -51,7 +51,7 @@ module.exports={
         ],
 
         paths:[
-            "./rerun.txt"
+            "reports/Rerun/rerun.txt"
         ],
 
         publishQuiet:true,

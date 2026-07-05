@@ -496,3 +496,76 @@
 [2026-07-05T13:51:47.146Z]INFO-Fetching searched products
 [2026-07-05T13:51:47.254Z]INFO-Scenario PASSED:Valid Search
 [2026-07-05T13:51:47.285Z]INFO-Closing browser
+[2026-07-05T14:06:50.567Z]INFO-Launching browser
+[2026-07-05T14:06:51.229Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T14:06:51.803Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T14:06:56.986Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T14:06:57.411Z]INFO-Opening Login page
+[2026-07-05T14:06:57.412Z]INFO-Clicking: //a[text()='Login']
+[2026-07-05T14:06:57.782Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-05T14:06:57.784Z]INFO-Getting text: #input-email
+[2026-07-05T14:06:58.045Z]INFO-Entering password
+[2026-07-05T14:06:58.048Z]INFO-Getting text: #input-password
+[2026-07-05T14:06:58.115Z]INFO-Clicking Login button
+[2026-07-05T14:06:58.116Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T14:06:59.764Z]INFO-Fetching success message locator
+[2026-07-05T14:06:59.897Z]INFO-Scenario PASSED:Valid Login
+[2026-07-05T14:06:59.998Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T14:07:00.186Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T14:07:01.988Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T14:07:02.228Z]INFO-Opening Login page
+[2026-07-05T14:07:02.229Z]INFO-Clicking: //a[text()='Login']
+[2026-07-05T14:07:02.493Z]INFO-Entering Email : ShamDoel
+[2026-07-05T14:07:02.494Z]INFO-Getting text: #input-email
+[2026-07-05T14:07:02.652Z]INFO-Entering password
+[2026-07-05T14:07:02.652Z]INFO-Getting text: #input-password
+[2026-07-05T14:07:02.716Z]INFO-Clicking Login button
+[2026-07-05T14:07:02.716Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T14:07:03.919Z]INFO-Fetching error message locator
+[2026-07-05T14:07:04.019Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-05T14:07:04.060Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T14:07:04.282Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T14:07:07.204Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T14:07:07.418Z]INFO-Opening Register page
+[2026-07-05T14:07:07.418Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T14:07:07.726Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-05T14:07:07.726Z]INFO-Email: Brent.Welch@yahoo.com
+[2026-07-05T14:07:07.726Z]INFO-Getting text: #input-firstname
+[2026-07-05T14:07:08.100Z]INFO-Getting text: #input-lastname
+[2026-07-05T14:07:08.143Z]INFO-Getting text: #input-email
+[2026-07-05T14:07:08.202Z]INFO-Getting text: #input-telephone
+[2026-07-05T14:07:08.237Z]INFO-Getting text: #input-password
+[2026-07-05T14:07:08.282Z]INFO-Getting text: #input-confirm
+[2026-07-05T14:07:08.335Z]INFO-Selecting privacy policy checkbox
+[2026-07-05T14:07:08.336Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T14:07:08.460Z]INFO-Clicking Register button
+[2026-07-05T14:07:08.461Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T14:07:10.876Z]INFO-Fetching success message locator
+[2026-07-05T14:07:10.984Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T14:07:11.033Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T14:07:11.311Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T14:07:13.248Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T14:07:13.438Z]INFO-Opening Register page
+[2026-07-05T14:07:13.438Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T14:07:13.765Z]INFO-Entering registration details for John Doe
+[2026-07-05T14:07:13.765Z]INFO-Email: doedavis@yahoo.com
+[2026-07-05T14:07:13.765Z]INFO-Getting text: #input-firstname
+[2026-07-05T14:07:14.281Z]INFO-Getting text: #input-lastname
+[2026-07-05T14:07:14.326Z]INFO-Getting text: #input-email
+[2026-07-05T14:07:14.377Z]INFO-Getting text: #input-telephone
+[2026-07-05T14:07:14.426Z]INFO-Getting text: #input-password
+[2026-07-05T14:07:14.468Z]INFO-Getting text: #input-confirm
+[2026-07-05T14:07:14.517Z]INFO-Selecting privacy policy checkbox
+[2026-07-05T14:07:14.517Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T14:07:14.619Z]INFO-Clicking Register button
+[2026-07-05T14:07:14.619Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T14:07:15.587Z]INFO-Fetching error message locator
+[2026-07-05T14:07:15.776Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T14:07:15.822Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T14:07:15.983Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T14:07:17.953Z]INFO-Searching product : Mac
+[2026-07-05T14:07:17.954Z]INFO-Getting text: input[name='search']
+[2026-07-05T14:07:18.121Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-05T14:07:18.463Z]INFO-Fetching searched products
+[2026-07-05T14:07:18.676Z]INFO-Scenario PASSED:Valid Search
+[2026-07-05T14:07:18.722Z]INFO-Closing browser
