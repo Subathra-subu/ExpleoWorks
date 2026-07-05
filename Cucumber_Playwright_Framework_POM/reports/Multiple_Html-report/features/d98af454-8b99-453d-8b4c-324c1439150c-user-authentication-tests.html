@@ -736,21 +736,21 @@ input#darkCheck:checked ~ label>svg#moon {
                     
                         <i class="fa fa-tag fa-lg"></i>
                         
-                            <span class="tag">@smoke</span>
+                            <span class="tag">@regression</span>
                         
                     
                 
             </div>
             <h1>Feature:
-                <small>Registeration</small>
+                <small>User Authentication tests</small>
             </h1>
             
                 <p>
                <p><strong>File name:</strong>
-                    register.feature
+                    login.feature
                 </p>
                 <p><strong>Relative path:</strong>
-                    features/register.feature</p>
+                    features/login.feature</p>
             
         </div>
 
@@ -938,13 +938,13 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                             <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@smoke</span>
+                                <span class="tag">@regression</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Valid registration</small></h2>
+                <h2>Scenario Outline: <small>Valid Login</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1050,10 +1050,10 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the user click Register link
+                                        User clicks on the login link
                                         
                                     
 
@@ -1113,7 +1113,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        the user enters the required details
+                                        User enter the email as "doedavis@yahoo.com"
                                         
                                     
 
@@ -1154,51 +1154,6 @@ input#darkCheck:checked ~ label>svg#moon {
 
                         
                             
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>firstname</th>
-                                                
-                                                    <th>lastname</th>
-                                                
-                                                    <th>email</th>
-                                                
-                                                    <th>telephone</th>
-                                                
-                                                    <th>password</th>
-                                                
-                                                    <th>confirm</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>shamdoe</td>
-                                                    
-                                                        <td>Davis</td>
-                                                    
-                                                        <td>dynamic</td>
-                                                    
-                                                        <td>9087654321</td>
-                                                    
-                                                        <td>12345</td>
-                                                    
-                                                        <td>12345</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
-                            
                         
 
                     
@@ -1218,7 +1173,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        the user click the privacy policy
+                                        User enter the password as "12345"
                                         
                                     
 
@@ -1278,7 +1233,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user click continue button
+                                        the user click login button
                                         
                                     
 
@@ -1338,7 +1293,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the user should able register successfully
+                                        the login should be successful
                                         
                                     
 
@@ -1399,13 +1354,13 @@ input#darkCheck:checked ~ label>svg#moon {
                         
                             <i class="fa fa-tag fa-lg"></i>
                             
-                                <span class="tag">@smoke</span>
+                                <span class="tag">@regression</span>
                             
                         
                     
                 </div>
 
-                <h2>Scenario: <small>Invalid registration with Existing username</small></h2>
+                <h2>Scenario: <small>Invalid Login</small></h2>
 
                 <ul class="nav navbar-right panel_toolbox">
                     <li>
@@ -1422,7 +1377,7 @@ input#darkCheck:checked ~ label>svg#moon {
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">6</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">5</span>
                         </li>
                     
 
@@ -1511,10 +1466,10 @@ input#darkCheck:checked ~ label>svg#moon {
                                 
 
                                 <div class="text">
-                                    <span class="keyword highlight">When </span>
+                                    <span class="keyword highlight">And </span>
 
                                     
-                                        the user click Register link
+                                        User clicks on the login link
                                         
                                     
 
@@ -1574,112 +1529,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">And </span>
 
                                     
-                                        the user enters the required details
-                                        
-                                    
-
-                                    
-
-                                </div>
-
-                                
-                                    
-
-                                    
-
-                                    
-                                    
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                
-                            </div>
-
-                        
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-
-                            
-                        
-
-                        
-                            
-                                <div class="scenario-scroll-bar">
-                                    
-                                        <table class="table arguments">
-                                            
-                                            <tr>
-                                                
-                                                
-                                                    <th>firstname</th>
-                                                
-                                                    <th>lastname</th>
-                                                
-                                                    <th>email</th>
-                                                
-                                                    <th>telephone</th>
-                                                
-                                                    <th>password</th>
-                                                
-                                                    <th>confirm</th>
-                                                
-                                            </tr>
-
-                                            
-                                                <tr>
-                                                    
-                                                    
-                                                        <td>John</td>
-                                                    
-                                                        <td>Doe</td>
-                                                    
-                                                        <td>doedavis@yahoo.com</td>
-                                                    
-                                                        <td>9087654321</td>
-                                                    
-                                                        <td>12345</td>
-                                                    
-                                                        <td>12345</td>
-                                                    
-                                                </tr>
-                                            
-                                        </table>
-                                    
-                                </div>
-
-                                
-                            
-                        
-
-                    
-                
-                        
-                            <div class="scenario-step-container">
-
-                                
-                                    
-                                        <div class="label" title="Success">
-                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
-                                        </div>
-                                    
-                                
-
-                                <div class="text">
-                                    <span class="keyword highlight">And </span>
-
-                                    
-                                        the user click the privacy policy
+                                        User enter invalid credentials from json file
                                         
                                     
 
@@ -1739,7 +1589,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">When </span>
 
                                     
-                                        the user click continue button
+                                        the user click login button
                                         
                                     
 
@@ -1799,7 +1649,7 @@ input#darkCheck:checked ~ label>svg#moon {
                                     <span class="keyword highlight">Then </span>
 
                                     
-                                        the user should able to see the error message
+                                        the login should fail
                                         
                                     
 

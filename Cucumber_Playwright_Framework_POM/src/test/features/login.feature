@@ -1,23 +1,21 @@
-# @regression
-# Feature: User Authentication tests
+@regression
+Feature: Login tests
 
-#     Background: 
-#         Given User navigates to the application
-#         And User clicks on the login link
+    Background:
+        Given Launch the application
+        And User clicks on the login link
 
-#     Scenario Outline:Valid Login
-#         And User enter the email as "doedavis@yahoo.com"
-#         And User enter the password as "12345"
-#         When the user click login button
-#         Then the login should be successful
+    Scenario Outline: Valid Login
+        And User enter the email as "<email>"
+        And User enter the password as "<password>"
+        When the user click login button
+        Then the login should be successful
 
-#     Examples:
+        Examples:
+        | email                   | password    |
+        | doedavis@yahoo.com      | 12345       |
 
-
-
-#     Scenario: Invalid Login
-#         And User enter the email as "ShamDoel"
-#         And User enter the password as "123456"
-#         When the user click login button
-#         Then the login should fail
-
+    Scenario: Invalid Login
+        And User enter invalid credentials from json file
+        When the user click login button
+        Then the login should fail

@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "registeration;valid-registration",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Valid registration",
+        "id": "login-tests;valid-login",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Valid Login",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 486377500
+              "duration": 207032000
             }
           },
           {
@@ -27,7 +27,230 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1950367899
+              "duration": 1896753300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks on the login link",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 460266799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User enter the email as \"doedavis@yahoo.com\"",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185838200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password as \"12345\"",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87453900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user click login button",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1336251999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the login should be successful",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111827400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51173900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-tests;invalid-login",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Invalid Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243453900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1426857700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks on the login link",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 465949899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User enter invalid credentials from json file",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135140500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "the user click login button",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 824765899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the login should fail",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94854600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 27447499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-tests",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login tests",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registeration-tests;valid-registration",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Valid registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 227504599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1800941399
             }
           },
           {
@@ -40,7 +263,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1277606400
+              "duration": 536976099
             }
           },
           {
@@ -78,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 706178199
+              "duration": 619283299
             }
           },
           {
@@ -91,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 66074700
+              "duration": 104003800
             }
           },
           {
@@ -104,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2012366799
+              "duration": 1023558499
             }
           },
           {
@@ -117,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 140988699
+              "duration": 97008900
             }
           },
           {
@@ -125,7 +348,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 140811200
+              "duration": 28943900
             }
           }
         ],
@@ -139,7 +362,7 @@
       },
       {
         "description": "",
-        "id": "registeration;invalid-registration-with-existing-username",
+        "id": "registeration-tests;invalid-registration-with-existing-username",
         "keyword": "Scenario",
         "line": 16,
         "name": "Invalid registration with Existing username",
@@ -149,7 +372,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 306672999
+              "duration": 250444400
             }
           },
           {
@@ -162,7 +385,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1787744600
+              "duration": 1575157800
             }
           },
           {
@@ -175,7 +398,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 704171399
+              "duration": 432170300
             }
           },
           {
@@ -213,7 +436,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 542098000
+              "duration": 445836299
             }
           },
           {
@@ -226,7 +449,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 65211800
+              "duration": 132985300
             }
           },
           {
@@ -239,7 +462,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 921956700
+              "duration": 785042100
             }
           },
           {
@@ -252,7 +475,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 210769799
+              "duration": 183109799
             }
           },
           {
@@ -260,7 +483,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 85315800
+              "duration": 39703600
             }
           }
         ],
@@ -273,10 +496,10 @@
         "type": "scenario"
       }
     ],
-    "id": "registeration",
+    "id": "registeration-tests",
     "line": 2,
     "keyword": "Feature",
-    "name": "Registeration",
+    "name": "Registeration tests",
     "tags": [
       {
         "name": "@smoke",

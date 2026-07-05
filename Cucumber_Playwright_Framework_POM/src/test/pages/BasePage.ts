@@ -2,7 +2,20 @@ import {Page} from "playwright"
 import {logger} from "../utils/Logger"
 
 export class BasePage{
+
+    private dropdown = "//span[@class='caret']";
+
     constructor(protected page:Page){}
+
+    async navigate(){
+        logger.info("Navigating to Tutorials Ninja application");
+        //await this.open(process.env.base_url!);
+        await this.open("https://tutorialsninja.com/demo");
+    }
+
+    async ClickDropDown(){
+        await this.Click(this.dropdown);
+    }
 
     async Click(locator:string){
         logger.info(`Clicking: ${locator}`);

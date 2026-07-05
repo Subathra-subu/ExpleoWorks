@@ -21,7 +21,7 @@ Before(async function (this:CustomWorld,scenario){
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
 
-    // this.loginPage = new LoginPage(this.page);
+    this.loginPage = new LoginPage(this.page);
     this.registerPage = new RegisterPage(this.page);
 
 })

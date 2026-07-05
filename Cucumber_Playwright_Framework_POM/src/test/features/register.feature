@@ -1,5 +1,5 @@
 @smoke
-Feature: Registeration
+Feature: Registeration tests
 
     Background: 
         Given Launch the application
