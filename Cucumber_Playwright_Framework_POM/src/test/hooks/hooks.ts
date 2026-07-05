@@ -10,7 +10,7 @@ let browser:any;
 
 BeforeAll(async()=>{
     //logger.info("Launching browser");
-    browser=await chromium.launch({headless:false});
+    browser=await chromium.launch();
 });
 
 Before(async function (this:CustomWorld,scenario){
