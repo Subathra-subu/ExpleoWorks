@@ -10,9 +10,9 @@ module.exports={
         ],
 
         require:[
-            "src/test/steps/**/*.ts",
-            "src/hooks/hooks.ts",
-            "src/hooks/world.ts",
+            "src/test/stepDefinitions/**/*.ts",
+            "src/test/hooks/hooks.ts",
+            "src/test/world/world.ts",
             "src/test/support/**/*.ts"
         ],
 
@@ -25,8 +25,8 @@ module.exports={
 
         format:[
             "progress",
-            "json:reports/cucumber-report.json",
-            "html:reports/Cucumber-report.html",
+            "json:reports/Json_Report/Json-report.json",
+            "html:reports/Html_Report/Html-report.html",
             "rerun:@rerun.txt"
         ],
         parallel:1
@@ -44,9 +44,9 @@ module.exports={
         ],
 
         require:[
-            "src/test/steps/**/*.ts",
-            "src/hooks/hooks.ts",
-            "src/hooks/world.ts",
+            "src/test/stepDefinitions/**/*.ts",
+            "src/test/hooks/hooks.ts",
+            "src/test/world/world.ts",
             "src/test/support/**/*.ts"
         ],
 
@@ -59,11 +59,11 @@ module.exports={
 
         format:[
             "progress",
-            "json:reports/cucumber-report.json",
-            "html:reports/Cucumber-report.html",
+            "json:reports/Json-report.json",
+            "html:reports/Html-report.html",
             "rerun:@rerun.txt"
         ],
         parallel:2
 
     }
-};
+}

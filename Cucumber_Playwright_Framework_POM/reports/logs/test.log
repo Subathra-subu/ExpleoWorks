@@ -1,0 +1,220 @@
+[2026-07-03T11:32:11.867Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:32:12.349Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:32:12.350Z]ERROR-Screenshot saved:reports/screenshots/1783078332148.png
+[2026-07-03T11:32:12.405Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:32:12.722Z]ERROR-Scenario FAILED:Invalid registration with Existing username
+[2026-07-03T11:32:12.723Z]ERROR-Screenshot saved:reports/screenshots/1783078332641.png
+[2026-07-03T11:32:49.207Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:32:50.060Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:32:50.061Z]ERROR-Screenshot saved:reports/screenshots/1783078369808.png
+[2026-07-03T11:32:50.101Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:32:50.549Z]ERROR-Scenario FAILED:Invalid registration with Existing username
+[2026-07-03T11:32:50.549Z]ERROR-Screenshot saved:reports/screenshots/1783078370436.png
+[2026-07-03T11:36:20.071Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:36:22.816Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:36:23.131Z]INFO-Clicking: 'link',{name:'Register'}
+[2026-07-03T11:36:23.491Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:36:23.491Z]ERROR-Screenshot saved:reports/screenshots/1783078583140.png
+[2026-07-03T11:36:23.558Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:36:26.377Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:36:26.475Z]INFO-Clicking: 'link',{name:'Register'}
+[2026-07-03T11:36:26.596Z]ERROR-Scenario FAILED:Invalid registration with Existing username
+[2026-07-03T11:36:26.597Z]ERROR-Screenshot saved:reports/screenshots/1783078586479.png
+[2026-07-03T11:37:35.122Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:37:37.655Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:37:37.922Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:37:38.196Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:37:38.424Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:37:38.462Z]INFO-Getting text: #input-email
+[2026-07-03T11:37:38.492Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:37:38.515Z]INFO-Getting text: #input-password
+[2026-07-03T11:37:38.554Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:37:38.575Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:37:38.623Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:37:39.176Z]INFO-Typing: //h1[text()='Your Account Has Been Created!']
+[2026-07-03T11:37:39.476Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:37:39.477Z]ERROR-Screenshot saved:reports/screenshots/1783078659201.png
+[2026-07-03T11:37:39.507Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:37:41.792Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:37:41.883Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:37:42.081Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:37:42.206Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:37:42.224Z]INFO-Getting text: #input-email
+[2026-07-03T11:37:42.242Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:37:42.264Z]INFO-Getting text: #input-password
+[2026-07-03T11:37:42.288Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:37:42.306Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:37:42.370Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:37:43.013Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-03T11:38:13.904Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:38:16.230Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:38:16.519Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:38:16.743Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:38:16.861Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:38:16.882Z]INFO-Getting text: #input-email
+[2026-07-03T11:38:16.908Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:38:16.936Z]INFO-Getting text: #input-password
+[2026-07-03T11:38:16.958Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:38:16.980Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:38:17.039Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:38:18.011Z]INFO-Typing: //h1[text()='Your Account Has Been Created!']
+[2026-07-03T11:38:18.272Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:38:18.272Z]ERROR-Screenshot saved:reports/screenshots/1783078698039.png
+[2026-07-03T11:38:18.330Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:38:20.489Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:38:20.580Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:38:20.764Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:38:20.884Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:38:20.908Z]INFO-Getting text: #input-email
+[2026-07-03T11:38:20.929Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:38:20.949Z]INFO-Getting text: #input-password
+[2026-07-03T11:38:20.968Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:38:20.982Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:38:21.061Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:38:21.674Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-03T11:41:05.928Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:41:08.139Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:41:08.463Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:41:08.718Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:41:08.937Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:41:08.954Z]INFO-Getting text: #input-email
+[2026-07-03T11:41:08.980Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:41:09.001Z]INFO-Getting text: #input-password
+[2026-07-03T11:41:09.019Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:41:09.036Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:41:09.087Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:41:10.757Z]INFO-Typing: //h1[text()='Your Account Has Been Created!']
+[2026-07-03T11:41:10.996Z]ERROR-Scenario FAILED:Valid registration
+[2026-07-03T11:41:10.996Z]ERROR-Screenshot saved:reports/screenshots/1783078870771.png
+[2026-07-03T11:41:11.049Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:41:13.382Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:41:13.479Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:41:13.697Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:41:13.815Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:41:13.832Z]INFO-Getting text: #input-email
+[2026-07-03T11:41:13.851Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:41:13.873Z]INFO-Getting text: #input-password
+[2026-07-03T11:41:13.889Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:41:13.906Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:41:13.965Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:41:14.581Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-03T11:45:15.290Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:45:17.972Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:45:18.270Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:45:18.566Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:45:18.694Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:45:18.719Z]INFO-Getting text: #input-email
+[2026-07-03T11:45:18.740Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:45:18.761Z]INFO-Getting text: #input-password
+[2026-07-03T11:45:18.779Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:45:18.801Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:45:18.857Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:45:19.570Z]INFO-Scenario PASSED:Valid registration
+[2026-07-03T11:45:19.614Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-03T11:45:22.278Z]INFO-Clicking: //span[@class='caret']
+[2026-07-03T11:45:22.368Z]INFO-Clicking: //a[text()='Register']
+[2026-07-03T11:45:22.579Z]INFO-Getting text: #input-firstname
+[2026-07-03T11:45:22.697Z]INFO-Getting text: #input-lastname
+[2026-07-03T11:45:22.719Z]INFO-Getting text: #input-email
+[2026-07-03T11:45:22.737Z]INFO-Getting text: #input-telephone
+[2026-07-03T11:45:22.755Z]INFO-Getting text: #input-password
+[2026-07-03T11:45:22.773Z]INFO-Getting text: #input-confirm
+[2026-07-03T11:45:22.787Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-03T11:45:22.826Z]INFO-Clicking: //input[@type='submit']
+[2026-07-03T11:45:23.425Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T10:31:48.549Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T10:31:52.572Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T10:31:53.233Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T10:31:53.629Z]INFO-Getting text: #input-firstname
+[2026-07-05T10:31:54.104Z]INFO-Getting text: #input-lastname
+[2026-07-05T10:31:54.173Z]INFO-Getting text: #input-email
+[2026-07-05T10:31:54.248Z]INFO-Getting text: #input-telephone
+[2026-07-05T10:31:54.306Z]INFO-Getting text: #input-password
+[2026-07-05T10:31:54.340Z]INFO-Getting text: #input-confirm
+[2026-07-05T10:31:54.389Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T10:31:54.452Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T10:31:55.422Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T10:31:55.568Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T10:31:58.985Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T10:31:59.322Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T10:31:59.610Z]INFO-Getting text: #input-firstname
+[2026-07-05T10:32:00.068Z]INFO-Getting text: #input-lastname
+[2026-07-05T10:32:00.179Z]INFO-Getting text: #input-email
+[2026-07-05T10:32:00.239Z]INFO-Getting text: #input-telephone
+[2026-07-05T10:32:00.269Z]INFO-Getting text: #input-password
+[2026-07-05T10:32:00.298Z]INFO-Getting text: #input-confirm
+[2026-07-05T10:32:00.329Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T10:32:00.399Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T10:32:01.182Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T10:48:08.062Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T10:48:10.410Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T10:48:11.332Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T10:48:11.720Z]INFO-Getting text: #input-firstname
+[2026-07-05T10:48:12.171Z]INFO-Getting text: #input-lastname
+[2026-07-05T10:48:12.239Z]INFO-Getting text: #input-email
+[2026-07-05T10:48:12.293Z]INFO-Getting text: #input-telephone
+[2026-07-05T10:48:12.331Z]INFO-Getting text: #input-password
+[2026-07-05T10:48:12.359Z]INFO-Getting text: #input-confirm
+[2026-07-05T10:48:12.393Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T10:48:12.473Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T10:48:13.739Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T10:48:13.918Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T10:48:16.032Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T10:48:16.370Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T10:48:16.690Z]INFO-Getting text: #input-firstname
+[2026-07-05T10:48:17.068Z]INFO-Getting text: #input-lastname
+[2026-07-05T10:48:17.171Z]INFO-Getting text: #input-email
+[2026-07-05T10:48:17.251Z]INFO-Getting text: #input-telephone
+[2026-07-05T10:48:17.318Z]INFO-Getting text: #input-password
+[2026-07-05T10:48:17.379Z]INFO-Getting text: #input-confirm
+[2026-07-05T10:48:17.432Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T10:48:17.549Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T10:48:18.859Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T11:00:45.279Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T11:00:48.392Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T11:00:49.434Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T11:00:49.860Z]INFO-Getting text: #input-firstname
+[2026-07-05T11:00:50.304Z]INFO-Getting text: #input-lastname
+[2026-07-05T11:00:50.395Z]INFO-Getting text: #input-email
+[2026-07-05T11:00:50.434Z]INFO-Getting text: #input-telephone
+[2026-07-05T11:00:50.475Z]INFO-Getting text: #input-password
+[2026-07-05T11:00:50.525Z]INFO-Getting text: #input-confirm
+[2026-07-05T11:00:50.562Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T11:00:50.625Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T11:00:52.457Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T11:00:52.559Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T11:00:54.661Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T11:00:55.048Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T11:00:55.381Z]INFO-Getting text: #input-firstname
+[2026-07-05T11:00:55.765Z]INFO-Getting text: #input-lastname
+[2026-07-05T11:00:55.843Z]INFO-Getting text: #input-email
+[2026-07-05T11:00:55.922Z]INFO-Getting text: #input-telephone
+[2026-07-05T11:00:55.991Z]INFO-Getting text: #input-password
+[2026-07-05T11:00:56.061Z]INFO-Getting text: #input-confirm
+[2026-07-05T11:00:56.114Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T11:00:56.240Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T11:00:57.045Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T11:05:11.226Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T11:05:13.664Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T11:05:14.509Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T11:05:14.964Z]INFO-Getting text: #input-firstname
+[2026-07-05T11:05:15.399Z]INFO-Getting text: #input-lastname
+[2026-07-05T11:05:15.497Z]INFO-Getting text: #input-email
+[2026-07-05T11:05:15.538Z]INFO-Getting text: #input-telephone
+[2026-07-05T11:05:15.574Z]INFO-Getting text: #input-password
+[2026-07-05T11:05:15.613Z]INFO-Getting text: #input-confirm
+[2026-07-05T11:05:15.650Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T11:05:15.717Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T11:05:17.871Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T11:05:18.053Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T11:05:20.149Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T11:05:20.496Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T11:05:20.856Z]INFO-Getting text: #input-firstname
+[2026-07-05T11:05:21.216Z]INFO-Getting text: #input-lastname
+[2026-07-05T11:05:21.260Z]INFO-Getting text: #input-email
+[2026-07-05T11:05:21.296Z]INFO-Getting text: #input-telephone
+[2026-07-05T11:05:21.332Z]INFO-Getting text: #input-password
+[2026-07-05T11:05:21.365Z]INFO-Getting text: #input-confirm
+[2026-07-05T11:05:21.397Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T11:05:21.462Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T11:05:22.596Z]INFO-Scenario PASSED:Invalid registration with Existing username

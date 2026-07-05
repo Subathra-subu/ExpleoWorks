@@ -1,0 +1,288 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registeration;valid-registration",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Valid registration",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 486377500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1950367899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user click Register link",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1277606400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstname",
+                      "lastname",
+                      "email",
+                      "telephone",
+                      "password",
+                      "confirm"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "shamdoe",
+                      "Davis",
+                      "dynamic",
+                      "9087654321",
+                      "12345",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user enters the required details",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 706178199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the user click the privacy policy",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66074700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user click continue button",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2012366799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should able register successfully",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140988699
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 140811200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registeration;invalid-registration-with-existing-username",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Invalid registration with Existing username",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 306672999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1787744600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user click Register link",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 704171399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstname",
+                      "lastname",
+                      "email",
+                      "telephone",
+                      "password",
+                      "confirm"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "John",
+                      "Doe",
+                      "doedavis@yahoo.com",
+                      "9087654321",
+                      "12345",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user enters the required details",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542098000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the user click the privacy policy",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65211800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user click continue button",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 921956700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the user should able to see the error message",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210769799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85315800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registeration",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Registeration",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\register.feature"
+  }
+]
