@@ -1,4 +1,4 @@
-@smoke
+@regression
 Feature: Registeration tests
 
     Background: 

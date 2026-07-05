@@ -400,3 +400,99 @@
 [2026-07-05T12:42:26.805Z]INFO-Fetching error message locator
 [2026-07-05T12:42:26.981Z]INFO-Scenario PASSED:Invalid registration with Existing username
 [2026-07-05T12:42:27.025Z]INFO-Closing browser
+[2026-07-05T13:31:30.199Z]INFO-Launching browser
+[2026-07-05T13:31:31.047Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:31:31.854Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:31:37.355Z]INFO-Scenario PASSED:Valid Search
+[2026-07-05T13:31:37.553Z]INFO-Closing browser
+[2026-07-05T13:46:01.773Z]INFO-Launching browser
+[2026-07-05T13:46:02.111Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:46:02.312Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:46:07.238Z]INFO-Searching product : Mac
+[2026-07-05T13:46:07.239Z]INFO-Getting text: input[name='search']
+[2026-07-05T13:46:07.658Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-05T13:46:08.118Z]INFO-Fetching searched products
+[2026-07-05T13:46:08.379Z]INFO-Scenario PASSED:Valid Search
+[2026-07-05T13:46:08.411Z]INFO-Closing browser
+[2026-07-05T13:47:46.974Z]INFO-Launching browser
+[2026-07-05T13:47:47.342Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:47:47.539Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:47:49.464Z]INFO-Searching product : Mac
+[2026-07-05T13:47:49.465Z]INFO-Getting text: input[name='search']
+[2026-07-05T13:47:49.638Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-05T13:47:50.023Z]INFO-Fetching searched products
+[2026-07-05T13:47:50.236Z]INFO-Scenario PASSED:Valid Search
+[2026-07-05T13:47:50.294Z]INFO-Closing browser
+[2026-07-05T13:51:25.569Z]INFO-Launching browser
+[2026-07-05T13:51:25.969Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:51:26.181Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:51:28.069Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T13:51:28.377Z]INFO-Opening Login page
+[2026-07-05T13:51:28.378Z]INFO-Clicking: //a[text()='Login']
+[2026-07-05T13:51:28.727Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-05T13:51:28.729Z]INFO-Getting text: #input-email
+[2026-07-05T13:51:28.902Z]INFO-Entering password
+[2026-07-05T13:51:28.905Z]INFO-Getting text: #input-password
+[2026-07-05T13:51:28.979Z]INFO-Clicking Login button
+[2026-07-05T13:51:28.980Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T13:51:30.479Z]INFO-Fetching success message locator
+[2026-07-05T13:51:30.616Z]INFO-Scenario PASSED:Valid Login
+[2026-07-05T13:51:30.685Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:51:30.945Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:51:32.864Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T13:51:33.126Z]INFO-Opening Login page
+[2026-07-05T13:51:33.126Z]INFO-Clicking: //a[text()='Login']
+[2026-07-05T13:51:33.437Z]INFO-Entering Email : ShamDoel
+[2026-07-05T13:51:33.437Z]INFO-Getting text: #input-email
+[2026-07-05T13:51:33.575Z]INFO-Entering password
+[2026-07-05T13:51:33.576Z]INFO-Getting text: #input-password
+[2026-07-05T13:51:33.626Z]INFO-Clicking Login button
+[2026-07-05T13:51:33.627Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T13:51:35.067Z]INFO-Fetching error message locator
+[2026-07-05T13:51:35.176Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-05T13:51:35.216Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:51:35.471Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:51:37.258Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T13:51:37.544Z]INFO-Opening Register page
+[2026-07-05T13:51:37.544Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T13:51:37.869Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-05T13:51:37.870Z]INFO-Email: Aiden_Pfannerstill@yahoo.com
+[2026-07-05T13:51:37.870Z]INFO-Getting text: #input-firstname
+[2026-07-05T13:51:38.386Z]INFO-Getting text: #input-lastname
+[2026-07-05T13:51:38.442Z]INFO-Getting text: #input-email
+[2026-07-05T13:51:38.507Z]INFO-Getting text: #input-telephone
+[2026-07-05T13:51:38.546Z]INFO-Getting text: #input-password
+[2026-07-05T13:51:38.590Z]INFO-Getting text: #input-confirm
+[2026-07-05T13:51:38.646Z]INFO-Selecting privacy policy checkbox
+[2026-07-05T13:51:38.646Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T13:51:38.762Z]INFO-Clicking Register button
+[2026-07-05T13:51:38.763Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T13:51:40.386Z]INFO-Fetching success message locator
+[2026-07-05T13:51:40.484Z]INFO-Scenario PASSED:Valid registration
+[2026-07-05T13:51:40.526Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:51:40.799Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:51:42.682Z]INFO-Clicking: //span[@class='caret']
+[2026-07-05T13:51:42.864Z]INFO-Opening Register page
+[2026-07-05T13:51:42.864Z]INFO-Clicking: //a[text()='Register']
+[2026-07-05T13:51:43.142Z]INFO-Entering registration details for John Doe
+[2026-07-05T13:51:43.142Z]INFO-Email: doedavis@yahoo.com
+[2026-07-05T13:51:43.143Z]INFO-Getting text: #input-firstname
+[2026-07-05T13:51:43.477Z]INFO-Getting text: #input-lastname
+[2026-07-05T13:51:43.517Z]INFO-Getting text: #input-email
+[2026-07-05T13:51:43.564Z]INFO-Getting text: #input-telephone
+[2026-07-05T13:51:43.605Z]INFO-Getting text: #input-password
+[2026-07-05T13:51:43.650Z]INFO-Getting text: #input-confirm
+[2026-07-05T13:51:43.690Z]INFO-Selecting privacy policy checkbox
+[2026-07-05T13:51:43.691Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-05T13:51:43.803Z]INFO-Clicking Register button
+[2026-07-05T13:51:43.803Z]INFO-Clicking: //input[@type='submit']
+[2026-07-05T13:51:44.427Z]INFO-Fetching error message locator
+[2026-07-05T13:51:44.591Z]INFO-Scenario PASSED:Invalid registration with Existing username
+[2026-07-05T13:51:44.624Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-05T13:51:44.807Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-05T13:51:46.690Z]INFO-Searching product : Mac
+[2026-07-05T13:51:46.691Z]INFO-Getting text: input[name='search']
+[2026-07-05T13:51:46.847Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-05T13:51:47.146Z]INFO-Fetching searched products
+[2026-07-05T13:51:47.254Z]INFO-Scenario PASSED:Valid Search
+[2026-07-05T13:51:47.285Z]INFO-Closing browser

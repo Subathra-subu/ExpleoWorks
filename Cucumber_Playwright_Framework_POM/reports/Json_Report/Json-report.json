@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 207032000
+              "duration": 189480500
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1896753300
+              "duration": 1906110099
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 460266799
+              "duration": 642514400
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 185838200
+              "duration": 181868100
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 87453900
+              "duration": 80564000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1336251999
+              "duration": 1499736399
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 111827400
+              "duration": 139795900
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 51173900
+              "duration": 63802400
             }
           }
         ],
@@ -124,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 243453900
+              "duration": 258163400
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1426857700
+              "duration": 1918360899
             }
           },
           {
@@ -150,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 465949899
+              "duration": 568222900
             }
           },
           {
@@ -159,11 +159,11 @@
             "line": 19,
             "name": "User enter invalid credentials from json file",
             "match": {
-              "location": "src\\test\\stepDefinitions\\loginTest.ts:40"
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:37"
             },
             "result": {
               "status": "passed",
-              "duration": 135140500
+              "duration": 192211800
             }
           },
           {
@@ -176,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 824765899
+              "duration": 1437941399
             }
           },
           {
@@ -185,11 +185,11 @@
             "line": 21,
             "name": "the login should fail",
             "match": {
-              "location": "src\\test\\stepDefinitions\\loginTest.ts:47"
+              "location": "src\\test\\stepDefinitions\\loginTest.ts:44"
             },
             "result": {
               "status": "passed",
-              "duration": 94854600
+              "duration": 111271100
             }
           },
           {
@@ -197,7 +197,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 27447499
+              "duration": 34053100
             }
           }
         ],
@@ -237,7 +237,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 227504599
+              "duration": 254650799
             }
           },
           {
@@ -250,7 +250,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1800941399
+              "duration": 1782715200
             }
           },
           {
@@ -263,7 +263,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 536976099
+              "duration": 599870699
             }
           },
           {
@@ -301,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 619283299
+              "duration": 788122100
             }
           },
           {
@@ -314,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 104003800
+              "duration": 114033100
             }
           },
           {
@@ -327,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1023558499
+              "duration": 1623068599
             }
           },
           {
@@ -340,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 97008900
+              "duration": 103569500
             }
           },
           {
@@ -348,13 +348,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28943900
+              "duration": 35860500
             }
           }
         ],
         "tags": [
           {
-            "name": "@smoke",
+            "name": "@regression",
             "line": 1
           }
         ],
@@ -372,7 +372,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 250444400
+              "duration": 272627799
             }
           },
           {
@@ -385,7 +385,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1575157800
+              "duration": 1882466400
             }
           },
           {
@@ -398,7 +398,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 432170300
+              "duration": 458959199
             }
           },
           {
@@ -436,7 +436,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 445836299
+              "duration": 548539400
             }
           },
           {
@@ -449,7 +449,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 132985300
+              "duration": 111950700
             }
           },
           {
@@ -462,7 +462,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 785042100
+              "duration": 617751599
             }
           },
           {
@@ -475,7 +475,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 183109799
+              "duration": 170369899
             }
           },
           {
@@ -483,13 +483,13 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39703600
+              "duration": 27653700
             }
           }
         ],
         "tags": [
           {
-            "name": "@smoke",
+            "name": "@regression",
             "line": 1
           }
         ],
@@ -502,10 +502,97 @@
     "name": "Registeration tests",
     "tags": [
       {
-        "name": "@smoke",
+        "name": "@regression",
         "line": 1
       }
     ],
     "uri": "src\\test\\features\\register.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-test;valid-search",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Valid Search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182767599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1875541600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User searches for a product from csv file using searchbox and searchbutton",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\searchTest.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 461642500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "all displayed products should contain the searched keyword",
+            "match": {
+              "location": "src\\test\\stepDefinitions\\searchTest.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109536899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29108200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-test",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Search Test",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "src\\test\\features\\search.feature"
   }
 ]

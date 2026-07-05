@@ -30,10 +30,7 @@ When('the user click login button', async function (this: CustomWorld) {
 Then('the login should be successful', async function (this: CustomWorld) {
 
     await expect(
-        this.page.locator(
-            await this.loginPage.getSuccessMessage()
-        )
-    ).toBeVisible();
+        this.page.locator(await this.loginPage.getSuccessMessage())).toBeVisible();
 
 });
 
@@ -47,9 +44,6 @@ Given('User enter invalid credentials from json file', async function (this: Cus
 Then('the login should fail', async function (this: CustomWorld) {
 
     await expect(
-        this.page.locator(
-            await this.loginPage.getErrorMessage()
-        )
-    ).toBeVisible();
+        this.page.locator(await this.loginPage.getErrorMessage())).toBeVisible();
 
 });

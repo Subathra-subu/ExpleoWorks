@@ -4,6 +4,7 @@ import { CustomWorld } from "../world/world";
 import {logger} from "../utils/Logger";
 import {LoginPage} from "../pages/LoginPage"
 import { RegisterPage } from "../pages/RegisterPage";
+import { SearchPage } from "../pages/SearchPage";
 
 setDefaultTimeout(60 * 1000);
 
@@ -23,6 +24,7 @@ Before(async function (this:CustomWorld,scenario){
 
     this.loginPage = new LoginPage(this.page);
     this.registerPage = new RegisterPage(this.page);
+    this.searchPage = new SearchPage(this.page);
 
 })
 
