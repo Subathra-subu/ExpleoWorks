@@ -2,7 +2,7 @@ const report = require("multiple-cucumber-html-reporter");
 
 report.generate({
   jsonDir: "reports",
-  reportPath: "reports/Multipe_Html-report",
+  reportPath: "reports/Multiple_Html-report",
   reportName: "Playwright BDD/POM Report",
   pageTitle: "Tutorials Ninja test report",
   displayDuration: false,
