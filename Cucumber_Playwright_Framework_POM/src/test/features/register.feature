@@ -13,7 +13,7 @@ Feature: Registration tests
         When the user click continue button
         Then the user should able register successfully
     
-    Scenario: Invalid registration with Existing username
+    Scenario: Invalid registration with Existing Email
         And the user enters the required details
         |firstname|lastname|email|telephone|password|confirm|
         |John|Doe|doedavis@yahoo.com|9087654321|12345|12345|

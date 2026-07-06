@@ -742,3 +742,295 @@
 [2026-07-06T05:19:28.830Z]INFO-Fetching searched products
 [2026-07-06T05:19:28.880Z]INFO-Scenario PASSED:Valid Search
 [2026-07-06T05:19:28.889Z]INFO-Closing browser
+[2026-07-06T06:20:51.111Z]INFO-Launching browser
+[2026-07-06T06:20:51.604Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:20:51.950Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:20:57.437Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:20:57.655Z]INFO-Opening Login page
+[2026-07-06T06:20:57.656Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:20:57.843Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-06T06:20:57.843Z]INFO-Getting text: #input-email
+[2026-07-06T06:20:57.956Z]INFO-Entering password
+[2026-07-06T06:20:57.956Z]INFO-Getting text: #input-password
+[2026-07-06T06:20:57.970Z]INFO-Clicking Login button
+[2026-07-06T06:20:57.971Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:20:58.920Z]INFO-Fetching success message locator
+[2026-07-06T06:20:58.953Z]INFO-Scenario PASSED:Valid Login
+[2026-07-06T06:20:58.991Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:20:59.059Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:20:59.993Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:21:00.074Z]INFO-Opening Login page
+[2026-07-06T06:21:00.074Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:21:00.253Z]INFO-Entering Email : ShamDoel
+[2026-07-06T06:21:00.253Z]INFO-Getting text: #input-email
+[2026-07-06T06:21:00.286Z]INFO-Entering password
+[2026-07-06T06:21:00.287Z]INFO-Getting text: #input-password
+[2026-07-06T06:21:00.296Z]INFO-Clicking Login button
+[2026-07-06T06:21:00.297Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:21:00.984Z]INFO-Fetching error message locator
+[2026-07-06T06:21:01.016Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-06T06:21:01.028Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:21:01.087Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:21:01.873Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:21:01.992Z]INFO-Opening Register page
+[2026-07-06T06:21:01.992Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:21:02.191Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-06T06:21:02.191Z]INFO-Email: Doreen_Botsford@hotmail.com
+[2026-07-06T06:21:02.191Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:21:02.426Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:21:02.438Z]INFO-Getting text: #input-email
+[2026-07-06T06:21:02.453Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:21:02.466Z]INFO-Getting text: #input-password
+[2026-07-06T06:21:02.478Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:21:02.489Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:21:02.490Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:21:02.536Z]INFO-Clicking Register button
+[2026-07-06T06:21:02.537Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:21:03.776Z]INFO-Fetching success message locator
+[2026-07-06T06:21:03.806Z]INFO-Scenario PASSED:Valid registration
+[2026-07-06T06:21:03.817Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:21:03.888Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:21:04.792Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:21:04.882Z]INFO-Opening Register page
+[2026-07-06T06:21:04.882Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:21:05.228Z]INFO-Entering registration details for John Doe
+[2026-07-06T06:21:05.228Z]INFO-Email: doedavis@yahoo.com
+[2026-07-06T06:21:05.228Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:21:05.444Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:21:05.453Z]INFO-Getting text: #input-email
+[2026-07-06T06:21:05.464Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:21:05.474Z]INFO-Getting text: #input-password
+[2026-07-06T06:21:05.485Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:21:05.494Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:21:05.494Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:21:05.534Z]INFO-Clicking Register button
+[2026-07-06T06:21:05.534Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:21:06.365Z]INFO-Fetching error message locator
+[2026-07-06T06:21:06.414Z]INFO-Scenario PASSED:Invalid registration with Existing Email
+[2026-07-06T06:21:06.429Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:21:06.495Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:21:07.332Z]INFO-Searching product : Mac
+[2026-07-06T06:21:07.333Z]INFO-Getting text: input[name='search']
+[2026-07-06T06:21:07.382Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-06T06:21:07.591Z]INFO-Fetching searched products
+[2026-07-06T06:21:07.647Z]INFO-Scenario PASSED:Valid Search
+[2026-07-06T06:21:07.658Z]INFO-Closing browser
+[2026-07-06T06:35:05.873Z]INFO-Launching browser
+[2026-07-06T06:35:06.079Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:35:06.182Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:35:11.261Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:35:11.360Z]INFO-Opening Login page
+[2026-07-06T06:35:11.361Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:35:11.812Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-06T06:35:11.813Z]INFO-Getting text: #input-email
+[2026-07-06T06:35:11.851Z]INFO-Entering password
+[2026-07-06T06:35:11.851Z]INFO-Getting text: #input-password
+[2026-07-06T06:35:11.864Z]INFO-Clicking Login button
+[2026-07-06T06:35:11.864Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:35:15.996Z]INFO-Fetching success message locator
+[2026-07-06T06:35:16.032Z]INFO-Scenario PASSED:Valid Login
+[2026-07-06T06:35:16.051Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:35:16.129Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:35:17.500Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:35:17.588Z]INFO-Opening Login page
+[2026-07-06T06:35:17.588Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:35:18.178Z]INFO-Entering Email : ShamDoel
+[2026-07-06T06:35:18.178Z]INFO-Getting text: #input-email
+[2026-07-06T06:35:18.211Z]INFO-Entering password
+[2026-07-06T06:35:18.211Z]INFO-Getting text: #input-password
+[2026-07-06T06:35:18.221Z]INFO-Clicking Login button
+[2026-07-06T06:35:18.221Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:35:19.922Z]INFO-Fetching error message locator
+[2026-07-06T06:35:19.950Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-06T06:35:19.960Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:35:20.025Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:35:21.425Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:35:21.505Z]INFO-Opening Register page
+[2026-07-06T06:35:21.506Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:35:21.794Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-06T06:35:21.794Z]INFO-Email: Fiona38@yahoo.com
+[2026-07-06T06:35:21.794Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:35:22.026Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:35:22.038Z]INFO-Getting text: #input-email
+[2026-07-06T06:35:22.055Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:35:22.064Z]INFO-Getting text: #input-password
+[2026-07-06T06:35:22.074Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:35:22.085Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:35:22.085Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:35:22.137Z]INFO-Clicking Register button
+[2026-07-06T06:35:22.137Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:35:24.399Z]INFO-Fetching success message locator
+[2026-07-06T06:35:24.423Z]INFO-Scenario PASSED:Valid registration
+[2026-07-06T06:35:24.431Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:35:24.493Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:35:25.305Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:35:25.388Z]INFO-Opening Register page
+[2026-07-06T06:35:25.388Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:35:25.599Z]INFO-Entering registration details for John Doe
+[2026-07-06T06:35:25.599Z]INFO-Email: doedavis@yahoo.com
+[2026-07-06T06:35:25.599Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:35:25.716Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:35:25.724Z]INFO-Getting text: #input-email
+[2026-07-06T06:35:25.735Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:35:25.745Z]INFO-Getting text: #input-password
+[2026-07-06T06:35:25.754Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:35:25.763Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:35:25.763Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:35:25.801Z]INFO-Clicking Register button
+[2026-07-06T06:35:25.801Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:35:26.410Z]INFO-Fetching error message locator
+[2026-07-06T06:35:26.452Z]INFO-Scenario PASSED:Invalid registration with Existing Email
+[2026-07-06T06:35:26.459Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:35:26.523Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:35:27.811Z]INFO-Searching product : Mac
+[2026-07-06T06:35:27.811Z]INFO-Getting text: input[name='search']
+[2026-07-06T06:35:27.874Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-06T06:35:28.133Z]INFO-Fetching searched products
+[2026-07-06T06:35:28.180Z]INFO-Scenario PASSED:Valid Search
+[2026-07-06T06:35:28.189Z]INFO-Closing browser
+[2026-07-06T06:38:01.547Z]INFO-Launching browser
+[2026-07-06T06:38:01.739Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:38:01.840Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:38:03.538Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:38:03.621Z]INFO-Opening Login page
+[2026-07-06T06:38:03.621Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:38:03.799Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-06T06:38:03.800Z]INFO-Getting text: #input-email
+[2026-07-06T06:38:03.838Z]INFO-Entering password
+[2026-07-06T06:38:03.838Z]INFO-Getting text: #input-password
+[2026-07-06T06:38:03.852Z]INFO-Clicking Login button
+[2026-07-06T06:38:03.852Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:38:04.811Z]INFO-Fetching success message locator
+[2026-07-06T06:38:04.839Z]INFO-Scenario PASSED:Valid Login
+[2026-07-06T06:38:04.852Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:38:04.919Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:38:06.592Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:38:06.682Z]INFO-Opening Login page
+[2026-07-06T06:38:06.682Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:38:06.923Z]INFO-Entering Email : ShamDoel
+[2026-07-06T06:38:06.923Z]INFO-Getting text: #input-email
+[2026-07-06T06:38:06.958Z]INFO-Entering password
+[2026-07-06T06:38:06.958Z]INFO-Getting text: #input-password
+[2026-07-06T06:38:06.976Z]INFO-Clicking Login button
+[2026-07-06T06:38:06.977Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:38:07.556Z]INFO-Fetching error message locator
+[2026-07-06T06:38:07.584Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-06T06:38:07.592Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:38:07.659Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:38:11.319Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:38:11.381Z]INFO-Opening Register page
+[2026-07-06T06:38:11.381Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:38:11.705Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-06T06:38:11.705Z]INFO-Email: Wilfred.Sawayn34@hotmail.com
+[2026-07-06T06:38:11.705Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:38:11.938Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:38:11.948Z]INFO-Getting text: #input-email
+[2026-07-06T06:38:11.961Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:38:11.971Z]INFO-Getting text: #input-password
+[2026-07-06T06:38:11.981Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:38:11.993Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:38:11.993Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:38:12.050Z]INFO-Clicking Register button
+[2026-07-06T06:38:12.050Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:38:13.049Z]INFO-Fetching success message locator
+[2026-07-06T06:38:13.117Z]INFO-Scenario PASSED:Valid registration
+[2026-07-06T06:38:13.126Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:38:13.190Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:38:18.029Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:38:18.082Z]INFO-Opening Register page
+[2026-07-06T06:38:18.083Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:38:18.323Z]INFO-Entering registration details for John Doe
+[2026-07-06T06:38:18.323Z]INFO-Email: doedavis@yahoo.com
+[2026-07-06T06:38:18.323Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:38:18.660Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:38:18.668Z]INFO-Getting text: #input-email
+[2026-07-06T06:38:18.680Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:38:18.690Z]INFO-Getting text: #input-password
+[2026-07-06T06:38:18.699Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:38:18.708Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:38:18.709Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:38:18.746Z]INFO-Clicking Register button
+[2026-07-06T06:38:18.746Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:38:20.078Z]INFO-Fetching error message locator
+[2026-07-06T06:38:20.122Z]INFO-Scenario PASSED:Invalid registration with Existing Email
+[2026-07-06T06:38:20.132Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:38:20.193Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:38:23.868Z]INFO-Searching product : Mac
+[2026-07-06T06:38:23.868Z]INFO-Getting text: input[name='search']
+[2026-07-06T06:38:23.915Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-06T06:38:24.253Z]INFO-Fetching searched products
+[2026-07-06T06:38:24.297Z]INFO-Scenario PASSED:Valid Search
+[2026-07-06T06:38:24.305Z]INFO-Closing browser
+[2026-07-06T06:48:54.012Z]INFO-Launching browser
+[2026-07-06T06:48:54.445Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:48:55.431Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:49:00.783Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:49:01.158Z]INFO-Opening Login page
+[2026-07-06T06:49:01.160Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:49:01.428Z]INFO-Entering Email : doedavis@yahoo.com
+[2026-07-06T06:49:01.429Z]INFO-Getting text: #input-email
+[2026-07-06T06:49:01.668Z]INFO-Entering password
+[2026-07-06T06:49:01.669Z]INFO-Getting text: #input-password
+[2026-07-06T06:49:01.732Z]INFO-Clicking Login button
+[2026-07-06T06:49:01.733Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:49:03.473Z]INFO-Fetching success message locator
+[2026-07-06T06:49:03.597Z]INFO-Scenario PASSED:Valid Login
+[2026-07-06T06:49:03.692Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:49:03.956Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:49:05.844Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:49:06.081Z]INFO-Opening Login page
+[2026-07-06T06:49:06.082Z]INFO-Clicking: //a[text()='Login']
+[2026-07-06T06:49:06.550Z]INFO-Entering Email : ShamDoel
+[2026-07-06T06:49:06.550Z]INFO-Getting text: #input-email
+[2026-07-06T06:49:06.724Z]INFO-Entering password
+[2026-07-06T06:49:06.724Z]INFO-Getting text: #input-password
+[2026-07-06T06:49:06.747Z]INFO-Clicking Login button
+[2026-07-06T06:49:06.748Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:49:08.312Z]INFO-Fetching error message locator
+[2026-07-06T06:49:08.413Z]INFO-Scenario PASSED:Invalid Login
+[2026-07-06T06:49:08.457Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:49:08.714Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:49:10.217Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:49:10.372Z]INFO-Opening Register page
+[2026-07-06T06:49:10.373Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:49:10.649Z]INFO-Entering registration details for shamdoe Davis
+[2026-07-06T06:49:10.649Z]INFO-Email: Daija.Blick46@yahoo.com
+[2026-07-06T06:49:10.649Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:49:11.028Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:49:11.078Z]INFO-Getting text: #input-email
+[2026-07-06T06:49:11.141Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:49:11.195Z]INFO-Getting text: #input-password
+[2026-07-06T06:49:11.240Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:49:11.299Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:49:11.300Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:49:11.411Z]INFO-Clicking Register button
+[2026-07-06T06:49:11.411Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:49:12.617Z]INFO-Fetching success message locator
+[2026-07-06T06:49:12.720Z]INFO-Scenario PASSED:Valid registration
+[2026-07-06T06:49:12.754Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:49:12.879Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:49:14.723Z]INFO-Clicking: //span[@class='caret']
+[2026-07-06T06:49:14.914Z]INFO-Opening Register page
+[2026-07-06T06:49:14.914Z]INFO-Clicking: //a[text()='Register']
+[2026-07-06T06:49:15.190Z]INFO-Entering registration details for John Doe
+[2026-07-06T06:49:15.190Z]INFO-Email: doedavis@yahoo.com
+[2026-07-06T06:49:15.190Z]INFO-Getting text: #input-firstname
+[2026-07-06T06:49:15.439Z]INFO-Getting text: #input-lastname
+[2026-07-06T06:49:15.458Z]INFO-Getting text: #input-email
+[2026-07-06T06:49:15.480Z]INFO-Getting text: #input-telephone
+[2026-07-06T06:49:15.500Z]INFO-Getting text: #input-password
+[2026-07-06T06:49:15.523Z]INFO-Getting text: #input-confirm
+[2026-07-06T06:49:15.546Z]INFO-Selecting privacy policy checkbox
+[2026-07-06T06:49:15.546Z]INFO-Clicking: //input[@type='checkbox']
+[2026-07-06T06:49:15.614Z]INFO-Clicking Register button
+[2026-07-06T06:49:15.614Z]INFO-Clicking: //input[@type='submit']
+[2026-07-06T06:49:16.239Z]INFO-Fetching error message locator
+[2026-07-06T06:49:16.406Z]INFO-Scenario PASSED:Invalid registration with Existing Email
+[2026-07-06T06:49:16.448Z]INFO-Starting scenario: ${scenario.pickle.name}
+[2026-07-06T06:49:16.669Z]INFO-Navigating to Tutorials Ninja application
+[2026-07-06T06:49:17.994Z]INFO-Searching product : Mac
+[2026-07-06T06:49:17.994Z]INFO-Getting text: input[name='search']
+[2026-07-06T06:49:18.091Z]INFO-Clicking: .btn.btn-default.btn-lg
+[2026-07-06T06:49:18.550Z]INFO-Fetching searched products
+[2026-07-06T06:49:18.649Z]INFO-Scenario PASSED:Valid Search
+[2026-07-06T06:49:18.667Z]INFO-Closing browser

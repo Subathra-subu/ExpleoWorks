@@ -2,7 +2,8 @@ module.exports={
     default:{
 
         "formatOptions":{
-                "snippetInterface":"async-await"
+                "snippetInterface":"async-await",
+                resultsDir: "reports/Allure_Report/allure-results"
         },
 
         requireModule:[
@@ -27,7 +28,8 @@ module.exports={
             "progress",
             "json:reports/Json_Report/Json-report.json",
             "html:reports/Html_Report/Html-report.html",
-            "rerun:reports/Rerun/rerun.txt"
+            "rerun:reports/Rerun/rerun.txt",
+            "allure-cucumberjs/reporter"
         ],
         parallel:1
 

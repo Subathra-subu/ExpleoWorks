@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4753","Invalid Login","","2026-07-06","passed","2026-07-06","","","",""
+"","9234","Valid Login","","2026-07-06","passed","2026-07-06","","","",""
+"","2215","Valid Search","","2026-07-06","passed","2026-07-06","","","",""
+"","3684","Invalid registration with Existing Email","","2026-07-06","passed","2026-07-06","","","",""
+"","4290","Valid registration","","2026-07-06","passed","2026-07-06","","","",""
