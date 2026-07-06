@@ -1,8 +1,8 @@
 @regression
-Feature: Registeration tests
+Feature: Registration tests
 
     Background: 
-        Given Launch the application
+        Given Launch the TutorialNinja application
         When the user click Register link
 
     Scenario: Valid registration

@@ -2,7 +2,7 @@
 Feature: Login tests
 
     Background:
-        Given Launch the application
+        Given Launch the TutorialNinja application
         And User clicks on the login link
 
     Scenario Outline: Valid Login

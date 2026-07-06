@@ -3,9 +3,10 @@ import { CustomWorld } from "../world/world";
 import {expect} from '@playwright/test'
 import { faker } from '@faker-js/faker';
 
-Given('Launch the application', async function (this:CustomWorld) {
+Given('Launch the TutorialNinja application', async function () {
 
     await this.registerPage.navigate();
+  
   
 });
 

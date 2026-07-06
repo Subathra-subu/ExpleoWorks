@@ -11,6 +11,7 @@ const envName = process.env.ENV || 'qa';
 dotenv.config({
   path: `./env/.env.${envName}`
 });
+
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 

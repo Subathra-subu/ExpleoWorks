@@ -2,7 +2,7 @@
 Feature: Search Test
 
     Background:
-        Given Launch the application
+        Given Launch the TutorialNinja application
 
     Scenario: Valid Search
         When User searches for a product from csv file using searchbox and searchbutton

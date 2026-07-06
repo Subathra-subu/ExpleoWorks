@@ -9,8 +9,8 @@ export class BasePage{
 
     async navigate(){
         logger.info("Navigating to Tutorials Ninja application");
-        //await this.open(process.env.base_url!);
-        await this.open("https://tutorialsninja.com/demo");
+        await this.open(process.env.BASE_URL!);
+        // await this.open("https://tutorialsninja.com/demo");
     }
 
     async ClickDropDown(){

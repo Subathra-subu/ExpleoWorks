@@ -14,20 +14,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 540877500
+              "duration": 104329900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Launch the application",
+            "name": "Launch the TutorialNinja application",
             "match": {
               "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 5207985499
+              "duration": 4918539600
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 776963400
+              "duration": 422535499
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 275705900
+              "duration": 116526099
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73693699
+              "duration": 16990900
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1647322000
+              "duration": 1774135699
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137138900
+              "duration": 29922700
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 83202000
+              "duration": 12725199
             }
           }
         ],
@@ -124,20 +124,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 187961599
+              "duration": 77827699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Launch the application",
+            "name": "Launch the TutorialNinja application",
             "match": {
               "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1800492499
+              "duration": 1135352699
             }
           },
           {
@@ -150,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 500422199
+              "duration": 265800900
             }
           },
           {
@@ -163,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 225825799
+              "duration": 54326600
             }
           },
           {
@@ -176,7 +176,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1200553599
+              "duration": 740433900
             }
           },
           {
@@ -189,7 +189,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 102240099
+              "duration": 32713700
             }
           },
           {
@@ -197,7 +197,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36889500
+              "duration": 7908400
             }
           }
         ],
@@ -227,7 +227,7 @@
     "elements": [
       {
         "description": "",
-        "id": "registeration-tests;valid-registration",
+        "id": "registration-tests;valid-registration",
         "keyword": "Scenario",
         "line": 8,
         "name": "Valid registration",
@@ -237,20 +237,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 221718899
+              "duration": 63324300
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Launch the application",
+            "name": "Launch the TutorialNinja application",
             "match": {
               "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2916896899
+              "duration": 855515100
             }
           },
           {
@@ -259,11 +259,11 @@
             "line": 6,
             "name": "the user click Register link",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:12"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 513504299
+              "duration": 292341599
             }
           },
           {
@@ -297,11 +297,11 @@
             "line": 9,
             "name": "the user enters the required details",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:18"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 617165900
+              "duration": 318213600
             }
           },
           {
@@ -310,11 +310,11 @@
             "line": 12,
             "name": "the user click the privacy policy",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:26"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 124640699
+              "duration": 77926400
             }
           },
           {
@@ -323,11 +323,11 @@
             "line": 13,
             "name": "the user click continue button",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:32"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 2415570800
+              "duration": 1004945100
             }
           },
           {
@@ -336,11 +336,11 @@
             "line": 14,
             "name": "the user should able register successfully",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:38"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:39"
             },
             "result": {
               "status": "passed",
-              "duration": 111818399
+              "duration": 25302999
             }
           },
           {
@@ -348,7 +348,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 43456000
+              "duration": 7695599
             }
           }
         ],
@@ -362,7 +362,7 @@
       },
       {
         "description": "",
-        "id": "registeration-tests;invalid-registration-with-existing-username",
+        "id": "registration-tests;invalid-registration-with-existing-username",
         "keyword": "Scenario",
         "line": 16,
         "name": "Invalid registration with Existing username",
@@ -372,20 +372,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 276391700
+              "duration": 66290400
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Launch the application",
+            "name": "Launch the TutorialNinja application",
             "match": {
               "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1937090799
+              "duration": 1246028900
             }
           },
           {
@@ -394,11 +394,11 @@
             "line": 6,
             "name": "the user click Register link",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:12"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 516289900
+              "duration": 328986799
             }
           },
           {
@@ -432,11 +432,11 @@
             "line": 17,
             "name": "the user enters the required details",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:18"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 751740599
+              "duration": 280455300
             }
           },
           {
@@ -445,11 +445,11 @@
             "line": 20,
             "name": "the user click the privacy policy",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:26"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 101768900
+              "duration": 36080100
             }
           },
           {
@@ -458,11 +458,11 @@
             "line": 21,
             "name": "the user click continue button",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:32"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 960671699
+              "duration": 590195499
             }
           },
           {
@@ -471,11 +471,11 @@
             "line": 22,
             "name": "the user should able to see the error message",
             "match": {
-              "location": "src\\test\\stepDefinitions\\registerTest.ts:44"
+              "location": "src\\test\\stepDefinitions\\registerTest.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 195681199
+              "duration": 39353100
             }
           },
           {
@@ -483,7 +483,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36360799
+              "duration": 7679399
             }
           }
         ],
@@ -496,10 +496,10 @@
         "type": "scenario"
       }
     ],
-    "id": "registeration-tests",
+    "id": "registration-tests",
     "line": 2,
     "keyword": "Feature",
-    "name": "Registeration tests",
+    "name": "Registration tests",
     "tags": [
       {
         "name": "@regression",
@@ -523,20 +523,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 160895599
+              "duration": 56944500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Launch the application",
+            "name": "Launch the TutorialNinja application",
             "match": {
               "location": "src\\test\\stepDefinitions\\registerTest.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1962821799
+              "duration": 1087900699
             }
           },
           {
@@ -549,7 +549,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 512054499
+              "duration": 311616500
             }
           },
           {
@@ -562,7 +562,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 216761099
+              "duration": 50655200
             }
           },
           {
@@ -570,7 +570,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41615599
+              "duration": 7867400
             }
           }
         ],
