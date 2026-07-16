@@ -265,7 +265,7 @@ if (targetRow != -1) {
 
     def flight = selectedCols.get(1).text().trim()
     def airline = selectedCols.get(2).text().trim()
-    def price = selectedCols.get(5).text().replace(&quot;$&quot;, &quot;&quot;).trim()
+    def price = selectedCols.get(5).text().replace(&apos;$&apos;, &quot;&quot;).trim()
 
     vars.put(&quot;selectedFlight&quot;, flight)
     vars.put(&quot;selectedAirline&quot;, airline)
