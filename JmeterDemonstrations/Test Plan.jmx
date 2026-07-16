@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Scripting_ThreadGroup">
@@ -124,7 +122,7 @@ log.info(&quot;Selected routes: ${fromPort} - ${toPort}&quot;)
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TC_FindFlight" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TC_FindFlight">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -228,56 +226,36 @@ log.info(&quot;Selected routes: ${fromPort} - ${toPort}&quot;)
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
             <stringProp name="scriptLanguage">groovy</stringProp>
             <stringProp name="parameters"></stringProp>
             <stringProp name="filename"></stringProp>
             <stringProp name="cacheKey">true</stringProp>
-            <stringProp name="script">import org.jsoup.Jsoup
-
-def html = prev.getResponseDataAsString()
-def doc = Jsoup.parse(html)
-
-def rows = doc.select(&quot;table tr&quot;)
-
-double maxPrice = 0.0
-int targetRow = -1
-
-for (int i = 1; i &lt; rows.size(); i++) {
-
-    def cols = rows.get(i).select(&quot;td&quot;)
-
-    if (cols.size() &gt;= 6) {
-
-        def priceText = cols.get(5).text().replace(&quot;$&quot;, &quot;&quot;).trim()
-        double price = priceText.toDouble()
-
-        if (price &gt; maxPrice) {
-            maxPrice = price
-            targetRow = i
-        }
-    }
+            <stringProp name="script">def html = prev.getResponseDataAsString()
+def doc=Jsoup.parse(html)
+def rows=doc.select(&quot;table tr&quot;)
+def maxPrice = 0.0
+def targetRow = -1
+for(int i=1;i&lt;row.size();i++){
+	def cols = rows.get(i).select(&quot;td&quot;)
+	if(cols.size()&gt;=6){
+		def priceText=cols.get(5).text().replace(&quot;\$&quot;,&quot;&quot;).trim()
+		def price = priceText.toDouble()
+		if(price&gt;maxPrice){
+			maxPrice = price
+			targetRow = i
+			}
+	}
 }
-
-if (targetRow != -1) {
-
-    def selectedCols = rows.get(targetRow).select(&quot;td&quot;)
-
-    def flight = selectedCols.get(1).text().trim()
-    def airline = selectedCols.get(2).text().trim()
-    def price = selectedCols.get(5).text().replace(&quot;$&quot;, &quot;&quot;).trim()
-
-    vars.put(&quot;selectedFlight&quot;, flight)
-    vars.put(&quot;selectedAirline&quot;, airline)
-    vars.put(&quot;selectedPrice&quot;, price)
-
-    log.info(&quot;Selected Flight : &quot; + flight)
-    log.info(&quot;Selected Airline: &quot; + airline)
-    log.info(&quot;Selected Price  : &quot; + price)
-}
-else {
-    log.error(&quot;No flight found.&quot;)
-}</stringProp>
+ if(targetRow != -1){
+ 	def selectedCols = row.get(targetRow).select(&quot;td&quot;)
+ 	def flight = selectedCols.get(1).text().trim()
+ 	def price = selectedCols.get(5).text().trim()
+ 	def airline = selectedCols.get(2).text().trim()
+ 	vars.put(&quot;selectedFlight&quot;,flight)
+ 	vars.put(&quot;selectedPrice&quot;,price)
+ 	vars.put(&quot;selectedAirline&quot;,airline)
+ }</stringProp>
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
@@ -407,7 +385,7 @@ else {
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller" enabled="true">
           <stringProp name="TestPlan.comments">TC_PurchaseFlight
 </stringProp>
           <boolProp name="TransactionController.parent">true</boolProp>
