@@ -1,9 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1784219343012,1322,/-5,200,OK,Scripting_ThreadGroup 1-1,text,true,,2231,662,1,1,https://blazedemo.com/,1319,0,861
-1784219342726,1322,TC_Launch,200,"Number of samples in transaction : 1, number of failing samples : 0",Scripting_ThreadGroup 1-1,,true,,2231,662,1,1,null,1319,2099,861
-1784219346149,500,/reserve.php-13,200,OK,Scripting_ThreadGroup 1-1,text,true,,2345,874,1,1,https://blazedemo.com/reserve.php,485,0,0
-1784219346149,500,TC_FindFlight,200,"Number of samples in transaction : 1, number of failing samples : 0",Scripting_ThreadGroup 1-1,,true,,2345,874,1,1,null,485,434,0
-1784219347084,487,/purchase.php-14,200,OK,Scripting_ThreadGroup 1-1,text,true,,2572,956,1,1,https://blazedemo.com/purchase.php,487,0,0
-1784219347083,487,TC_ChooseFlight,200,"Number of samples in transaction : 1, number of failing samples : 0",Scripting_ThreadGroup 1-1,,true,,2572,956,1,1,null,487,4,0
-1784219347575,491,/confirmation.php-17,200,OK,Scripting_ThreadGroup 1-1,text,true,,2313,1009,1,1,https://blazedemo.com/confirmation.php,490,0,0
-1784219347574,491,Transaction Controller,200,"Number of samples in transaction : 1, number of failing samples : 0",Scripting_ThreadGroup 1-1,,true,,2313,1009,1,1,null,490,3,0
