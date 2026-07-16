@@ -93,8 +93,38 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">import org.jsoup.Jsoup
+import java.util.Random
+
+def html = prev.getResponseDataAsString()
+def doc = Jsoup.parse(html)
+
+def fromOptions = doc.select(&quot;select[name=fromPort] option&quot;).collect{it.text()}
+def toOptions = doc.select(&quot;select[name=toPort] option&quot;).collect{it.text()}
+
+def rand = new Random()
+def fromPort,toPort
+
+do{
+	fromPort = fromOptions[rand.nextInt(fromOptions.size())]
+	toPort = toOptions[rand.nextInt(toOptions.size())]
+}while(fromPort==toPort)
+
+vars.put(&quot;fromPort&quot;,fromPort)
+vars.put(&quot;toPort&quot;,toPort)
+
+log.info(&quot;Selected routes: ${fromPort} - ${toPort}&quot;)
+
+</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TC_FindFlight" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TC_FindFlight">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -113,14 +143,14 @@
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
-                  <stringProp name="Argument.value">Philadelphia</stringProp>
+                  <stringProp name="Argument.value">${fromPort}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
-                  <stringProp name="Argument.value">London</stringProp>
+                  <stringProp name="Argument.value">${toPort}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -198,6 +228,38 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">def html = prev.getResponseDataAsString()
+def doc=Jsoup.parse(html)
+def rows=doc.select(&quot;table tr&quot;)
+def maxPrice = 0.0
+def targetRow = -1
+for(int i=1;i&lt;row.size();i++){
+	def cols = rows.get(i).select(&quot;td&quot;)
+	if(cols.size()&gt;=6){
+		def priceText=cols.get(5).text().replace(&quot;\$&quot;,&quot;&quot;).trim()
+		def price = priceText.toDouble()
+		if(price&gt;maxPrice){
+			maxPrice = price
+			targetRow = i
+			}
+	}
+}
+ if(targetRow != -1){
+ 	def selectedCols = row.get(targetRow).select(&quot;td&quot;)
+ 	def flight = selectedCols.get(1).text().trim()
+ 	def price = selectedCols.get(5).text().trim()
+ 	def airline = selectedCols.get(2).text().trim()
+ 	vars.put(&quot;selectedFlight&quot;,flight)
+ 	vars.put(&quot;selectedPrice&quot;,price)
+ 	vars.put(&quot;selectedAirline&quot;,airline)
+ }</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TC_ChooseFlight" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
@@ -419,6 +481,7 @@
                   <stringProp name="Argument.name">nameOnCard</stringProp>
                   <stringProp name="Argument.value"></stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
               </collectionProp>
             </elementProp>
