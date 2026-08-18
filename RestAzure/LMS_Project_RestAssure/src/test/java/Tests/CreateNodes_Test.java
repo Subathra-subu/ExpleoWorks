@@ -182,4 +182,31 @@ public class CreateNodes_Test {
 
 	    response.then().statusCode(200);
 	}
+	
+	@Test
+	public void createNoteWithoutTitle() {
+
+	    Map<String, Object> fields = new HashMap<>();
+
+	    ArrayList<String> tags = new ArrayList<>();
+	    tags.add("API");
+	    tags.add("Demo");
+
+	    fields.put("content", "Testing note without title");
+	    fields.put("tags", tags);
+	    fields.put("isPinned", false);
+	    fields.put("color", "blue");
+
+	    Response response = RestAssured
+	            .given()
+	            .contentType(ContentType.JSON)
+	            .header("Authorization", "Bearer " + token)
+	            .body(fields)
+	            .when()
+	            .post(url + "/create/notes");
+
+	    response.prettyPrint();
+
+	    response.then().statusCode(201);
+	}
 }

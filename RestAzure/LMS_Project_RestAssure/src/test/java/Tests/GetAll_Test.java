@@ -108,6 +108,8 @@ public class GetAll_Test{
 	  
 	  response.then().statusCode(200);
 	  
+	  response.prettyPrint();
+	  
 	  Assert.assertTrue(response.jsonPath().getList("data").size() > 0);
 	  Assert.assertEquals(response.jsonPath().getString("message[0].key"), "success");
 	  Assert.assertNotNull(response.jsonPath().getString("data[0]._id"));
@@ -115,7 +117,7 @@ public class GetAll_Test{
 	  Assert.assertNotNull(response.jsonPath().getString("data[0].courseName"));
 	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
 	  
-	  response.prettyPrint(); 
+	   
 	  
   }
 }
