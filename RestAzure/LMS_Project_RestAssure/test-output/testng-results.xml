@@ -1,21 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-18T18:44:41 IST" name="Default suite" finished-at="2026-08-18T18:46:20 IST" duration-ms="98979">
+  <suite started-at="2026-08-19T16:09:50 IST" name="Suite" finished-at="2026-08-19T16:10:45 IST" duration-ms="55526">
     <groups>
     </groups>
-    <test started-at="2026-08-18T18:44:41 IST" name="Default test" finished-at="2026-08-18T18:46:20 IST" duration-ms="98979">
-      <class name="Tests.GetAll_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.GetAll_Test@4b2c5e02]" started-at="2026-08-18T18:44:41 IST" name="setup" finished-at="2026-08-18T18:46:16 IST" duration-ms="95761" status="PASS">
+    <test started-at="2026-08-19T16:09:50 IST" name="Test" finished-at="2026-08-19T16:10:45 IST" duration-ms="55526">
+      <class name="Tests.CreateNodes_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:11 IST" name="setup" finished-at="2026-08-19T16:10:16 IST" duration-ms="4644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Get_all_roles()[pri:0, instance:Tests.GetAll_Test@4b2c5e02]" started-at="2026-08-18T18:46:17 IST" name="Get_all_roles" finished-at="2026-08-18T18:46:19 IST" duration-ms="2789" status="PASS">
+        <test-method signature="Get_all_Notes_Query()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:16 IST" name="Get_all_Notes_Query" finished-at="2026-08-19T16:10:18 IST" duration-ms="2622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_Notes_Query -->
+        <test-method signature="Get_all_Notes_Query_remaining()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:18 IST" name="Get_all_Notes_Query_remaining" finished-at="2026-08-19T16:10:21 IST" duration-ms="3084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_Notes_Query_remaining -->
+        <test-method signature="createNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:22 IST" name="createNote" data-provider="createData" finished-at="2026-08-19T16:10:25 IST" duration-ms="2751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Created by Subathra]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#ffffff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNote -->
+        <test-method signature="Get_Note_ID()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:25 IST" name="Get_Note_ID" finished-at="2026-08-19T16:10:28 IST" depends-on-methods="Tests.CreateNodes_Test.createNote" duration-ms="3211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Note_ID -->
+        <test-method signature="createNoteWithoutTitle()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:28 IST" name="createNoteWithoutTitle" finished-at="2026-08-19T16:10:32 IST" duration-ms="3254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNoteWithoutTitle -->
+        <test-method signature="deleteNote_InvalidId()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:32 IST" name="deleteNote_InvalidId" finished-at="2026-08-19T16:10:34 IST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNote_InvalidId -->
+        <test-method signature="updateNote(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:34 IST" name="updateNote" data-provider="updateData" finished-at="2026-08-19T16:10:36 IST" depends-on-methods="Tests.CreateNodes_Test.createNote" duration-ms="2091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[API Test Note (edited)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Updated content]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FALSE]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#ffeb3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNote -->
+        <test-method signature="togglePinNote()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:36 IST" name="togglePinNote" finished-at="2026-08-19T16:10:40 IST" depends-on-methods="Tests.CreateNodes_Test.updateNote" duration-ms="3919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- togglePinNote -->
+        <test-method signature="deleteNote()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:40 IST" name="deleteNote" finished-at="2026-08-19T16:10:43 IST" depends-on-methods="Tests.CreateNodes_Test.togglePinNote" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNote -->
+        <test-method signature="Get_all_Notes()[pri:0, instance:Tests.CreateNodes_Test@7103cb56]" started-at="2026-08-19T16:10:43 IST" name="Get_all_Notes" finished-at="2026-08-19T16:10:45 IST" duration-ms="1767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_Notes -->
+      </class> <!-- Tests.CreateNodes_Test -->
+      <class name="Tests.WithoutToken">
+        <test-method signature="withoutToken()[pri:0, instance:Tests.WithoutToken@1b765a2c]" started-at="2026-08-19T16:10:45 IST" name="withoutToken" finished-at="2026-08-19T16:10:45 IST" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutToken -->
+      </class> <!-- Tests.WithoutToken -->
+      <class name="Tests.GetAll_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:09:50 IST" name="setup" finished-at="2026-08-19T16:09:58 IST" duration-ms="8650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Get_all_course_structures()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:09:58 IST" name="Get_all_course_structures" finished-at="2026-08-19T16:10:01 IST" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_course_structures -->
+        <test-method signature="Get_all_institutions()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:01 IST" name="Get_all_institutions" finished-at="2026-08-19T16:10:02 IST" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_institutions -->
+        <test-method signature="Get_all_institutions_Invalid()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:02 IST" name="Get_all_institutions_Invalid" finished-at="2026-08-19T16:10:03 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_all_institutions_Invalid -->
+        <test-method signature="Get_all_roles()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:03 IST" name="Get_all_roles" finished-at="2026-08-19T16:10:05 IST" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Get_all_roles -->
+        <test-method signature="Health_check()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:05 IST" name="Health_check" finished-at="2026-08-19T16:10:05 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Health_check -->
+        <test-method signature="Login_invalid()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:05 IST" name="Login_invalid" finished-at="2026-08-19T16:10:10 IST" duration-ms="4565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_invalid -->
+        <test-method signature="getRoleInvalidEndpoint()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:10 IST" name="getRoleInvalidEndpoint" finished-at="2026-08-19T16:10:10 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRoleInvalidEndpoint -->
+        <test-method signature="getRoleWithInvalidAuthorization()[pri:0, instance:Tests.GetAll_Test@59f63e24]" started-at="2026-08-19T16:10:10 IST" name="getRoleWithInvalidAuthorization" finished-at="2026-08-19T16:10:11 IST" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRoleWithInvalidAuthorization -->
       </class> <!-- Tests.GetAll_Test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

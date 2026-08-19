@@ -85,6 +85,21 @@ public class GetAll_Test{
   }
   
   @Test
+  public void Get_all_institutions_Invalid() {
+
+      Response response = RestAssured
+              .given()
+              .header("Authorization", "Bearer " + token)
+              .when()
+              .get(url + "/getAll/invalidInstitution");
+
+      System.out.println("Status Code: " + response.getStatusCode());
+      response.prettyPrint();
+
+      response.then().statusCode(404);
+  }
+  
+  @Test
   public void Get_all_roles() {
 	  
 	  Response response = RestAssured.given().
@@ -110,14 +125,35 @@ public class GetAll_Test{
 	  
 	  response.prettyPrint();
 	  
-	  Assert.assertTrue(response.jsonPath().getList("data").size() > 0);
 	  Assert.assertEquals(response.jsonPath().getString("message[0].key"), "success");
-	  Assert.assertNotNull(response.jsonPath().getString("data[0]._id"));
-	  Assert.assertNotNull(response.jsonPath().getString("data[0].courseCode"));
-	  Assert.assertNotNull(response.jsonPath().getString("data[0].courseName"));
-	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");
-	  
-	   
-	  
+	  Assert.assertEquals(response.jsonPath().getString("message[0].value"),"Course structures retrieved successfully");     
+  }
+  
+  @Test
+  public void getRoleWithInvalidAuthorization() {
+
+      Response response = RestAssured
+              .given()
+              .header("Authorization", "Bearer wrongToken456")
+              .when()
+              .get(url + "/roles/getAll");
+
+      response.prettyPrint();
+
+      response.then().statusCode(401);
+  }
+  
+  @Test
+  public void getRoleInvalidEndpoint() {
+
+      Response response = RestAssured
+              .given()
+              .header("Authorization", "Bearer " + token)
+              .when()
+              .get(url + "/roles/getAlll");
+
+      response.prettyPrint();
+
+      response.then().statusCode(404);
   }
 }

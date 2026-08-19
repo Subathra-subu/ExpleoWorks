@@ -6,12 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.GetAll_Test">
+      <class name="Tests.CreateNodes_Test">
         <methods>
+          <include name="deleteNote_InvalidId"/>
           <include name="setup"/>
-          <include name="Get_all_course_structures"/>
         </methods>
-      </class> <!-- Tests.GetAll_Test -->
+      </class> <!-- Tests.CreateNodes_Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

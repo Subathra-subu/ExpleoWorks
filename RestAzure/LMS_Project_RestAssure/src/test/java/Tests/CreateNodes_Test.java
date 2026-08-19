@@ -184,6 +184,21 @@ public class CreateNodes_Test {
 	}
 	
 	@Test
+	public void deleteNote_InvalidId() {
+
+	    Response response = RestAssured
+	            .given()
+	            .header("Authorization", "Bearer " + token)
+	            .pathParam("id", 999999)
+	            .when()
+	            .delete(url + "/delete/notes/ById/{id}");
+
+	    response.prettyPrint();
+
+	    response.then().statusCode(400);
+	}
+	
+	@Test
 	public void createNoteWithoutTitle() {
 
 	    Map<String, Object> fields = new HashMap<>();
